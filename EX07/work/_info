@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vsqrt
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1770659081
+!i10b 1
+!s100 C@7Xc[li4Km>gZVCQkh`12
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IjQdaJIX`0FM_;Hb^464^m3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/adams/ECE551-stuff/EX07
+w1770654886
+8C:/Users/adams/ECE551-stuff/EX07/sqrt.sv
+FC:/Users/adams/ECE551-stuff/EX07/sqrt.sv
+!i122 1
+L0 1 121
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1770659081.000000
+!s107 C:/Users/adams/ECE551-stuff/EX07/sqrt.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551-stuff/EX07/sqrt.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vsqrt_tb
+R0
+R1
+!i10b 1
+!s100 VlVNRQ=aAY==:CYZVRkJ]1
+R2
+IYn4Uk`jObH^]AP7WPG0g60
+R3
+S1
+R4
+w1770659069
+8C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv
+FC:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv
+!i122 2
+L0 3 66
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv|
+!i113 1
+R7
+R8

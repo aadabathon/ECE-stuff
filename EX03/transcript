@@ -1,0 +1,22 @@
+# Compile of arith.sv was successful.
+# Compile of arith_tb.sv was successful.
+# Compile of dff.sv was successful.
+# Compile of gpt_synchD.sv was successful.
+# Compile of synch_detect.sv was successful.
+# Compile of synch_detect_tb.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.synch_detect_tb
+# vsim -gui work.synch_detect_tb 
+# Start time: 18:14:01 on Feb 02,2026
+# Loading sv_std.std
+# Loading work.synch_detect_tb
+# Loading work.synch_detect
+# Loading work.dff
+run
+# YAHOO!! all tests passed!
+# 
+# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX03/synch_detect_tb.sv(53)
+#    Time: 191 ps  Iteration: 0  Instance: /synch_detect_tb
+# Break in Module synch_detect_tb at C:/Users/adams/ECE551-stuff/EX03/synch_detect_tb.sv line 53
+# End time: 18:14:16 on Feb 02,2026, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 2

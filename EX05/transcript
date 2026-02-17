@@ -1,0 +1,104 @@
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.PID_cntrl_tb
+# vsim -gui work.PID_cntrl_tb 
+# Start time: 11:12:07 on Feb 02,2026
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb
+# Loading work.PID
+# Loading work.plant
+add wave -position insertpoint sim:/PID_cntrl_tb/*
+run
+# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ps  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at C:/Users/adams/ECE551-stuff/EX05/PID_cntrl_tb.sv line 36
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ps  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at C:/Users/adams/ECE551-stuff/EX05/PID_cntrl_tb.sv line 36
+restart -f
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ps  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at C:/Users/adams/ECE551-stuff/EX05/PID_cntrl_tb.sv line 36
+restart -f
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PID_cntrl_tb
+# Loading work.PID
+# Loading work.plant
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PID_cntrl_tb
+# Loading work.PID
+# Loading work.plant
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PID_cntrl_tb
+# Loading work.PID
+# Loading work.plant
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PID_cntrl_tb
+# Loading work.PID
+# Loading work.plant
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 11:36:05 on Feb 02,2026, Elapsed time: 0:23:58
+# Errors: 0, Warnings: 1

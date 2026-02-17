@@ -1,0 +1,25 @@
+vsim -gui work.mux2to1_tb
+# vsim -gui work.mux2to1_tb 
+# Start time: 11:11:29 on Jan 26,2026
+# Loading sv_std.std
+# Loading work.mux2to1_tb
+# Loading work.mux2to1
+add wave -position insertpoint sim:/mux2to1_tb/iDUT/iINV/*
+# ** UI-Msg: (vish-4014) No objects found matching '/mux2to1_tb/iDUT/iINV/*'.
+add wave -position insertpoint sim:/mux2to1_tb/iDUT/iAND0/*
+# ** UI-Msg: (vish-4014) No objects found matching '/mux2to1_tb/iDUT/iAND0/*'.
+add wave -position insertpoint sim:/mux2to1_tb/iDUT/iAND1/*
+# ** UI-Msg: (vish-4014) No objects found matching '/mux2to1_tb/iDUT/iAND1/*'.
+add wave -position insertpoint sim:/mux2to1_tb/iDUT/iOR/*
+# ** UI-Msg: (vish-4014) No objects found matching '/mux2to1_tb/iDUT/iOR/*'.
+add wave -position insertpoint sim:/mux2to1_tb/iDUT/*
+run
+# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX01/mux2to1_tb.sv(38)
+#    Time: 40 ps  Iteration: 0  Instance: /mux2to1_tb
+# Break in Module mux2to1_tb at C:/Users/adams/ECE551-stuff/EX01/mux2to1_tb.sv line 38
+quit -sim
+# End time: 11:19:52 on Jan 26,2026, Elapsed time: 0:08:23
+# Errors: 0, Warnings: 1
+# ** Error: Acs sdne.
+# 2
+#        Unable to replace existing ini file (C:/Users/adams/ECE551-stuff/EX01/ECE-551-EX01.mpf).  File can not be renamed.

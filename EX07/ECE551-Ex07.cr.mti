@@ -1,0 +1,15 @@
+C:/Users/adams/ECE551-stuff/EX07/sqrt.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX07/sqrt.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sqrt
+
+Top level modules:
+	sqrt
+
+} {} {}} C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sqrt_tb
+
+Top level modules:
+	sqrt_tb
+
+} {} {}}

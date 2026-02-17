@@ -1,0 +1,15 @@
+C:/Users/adams/ECE551-stuff/EX01/mux2to1.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX01/mux2to1.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2to1
+
+Top level modules:
+	mux2to1
+
+} {} {}} C:/Users/adams/ECE551-stuff/EX01/mux2to1_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX01/mux2to1_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2to1_tb
+
+Top level modules:
+	mux2to1_tb
+
+} {} {}}

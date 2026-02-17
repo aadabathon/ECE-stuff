@@ -1,0 +1,38 @@
+# Compile of PWM12.sv was successful.
+# Compile of PWM12_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.PWM12_tb
+# vsim -gui work.PWM12_tb 
+# Start time: 11:23:08 on Feb 16,2026
+# Loading sv_std.std
+# Loading work.PWM12_tb
+# Loading work.PWM12
+add wave -position insertpoint sim:/PWM12_tb/*
+add wave -position insertpoint sim:/PWM12_tb/dut/*
+run -all
+# ** Fatal: [287730.0 ns] DEADTIME 1->2 too small: 43
+#    Time: 287730 ns  Scope: PWM12_tb File: C:/Users/adams/ECE551-stuff/EX09/PWM12_tb.sv Line: 55
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX09/PWM12_tb.sv(55)
+#    Time: 287730 ns  Iteration: 1  Instance: /PWM12_tb
+# 1
+# Break in Module PWM12_tb at C:/Users/adams/ECE551-stuff/EX09/PWM12_tb.sv line 55
+quit -sim
+# End time: 11:28:50 on Feb 16,2026, Elapsed time: 0:05:42
+# Errors: 1, Warnings: 5
+# Compile of PWM12.sv was successful.
+# Compile of PWM12_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.PWM12_tb
+# vsim -gui work.PWM12_tb 
+# Start time: 11:29:08 on Feb 16,2026
+# Loading sv_std.std
+# Loading work.PWM12_tb
+# Loading work.PWM12
+add wave -position insertpoint sim:/PWM12_tb/iDUT/*
+run -all
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX09/PWM12_tb.sv(39)
+#    Time: 300090 ns  Iteration: 1  Instance: /PWM12_tb
+# 1
+# Break in Module PWM12_tb at C:/Users/adams/ECE551-stuff/EX09/PWM12_tb.sv line 39
+# End time: 11:40:44 on Feb 16,2026, Elapsed time: 0:11:36
+# Errors: 0, Warnings: 2

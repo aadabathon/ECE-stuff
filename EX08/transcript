@@ -1,0 +1,153 @@
+# Compile of I_term.sv was successful.
+# Compile of I_term_draft_1.sv failed with 1 errors.
+# Compile of I_term_tb.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+vsim -gui work.I_term_tb
+# vsim -gui work.I_term_tb 
+# Start time: 12:36:28 on Feb 13,2026
+# Loading sv_std.std
+# Loading work.I_term_tb
+# Loading work.I_term
+quit -sim
+# End time: 12:37:05 on Feb 13,2026, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 5
+# Compile of I_term.sv was successful.
+# Compile of I_term_draft_1.sv failed with 1 errors.
+# Compile of I_term_tb.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+vsim -gui work.I_term_tb
+# vsim -gui work.I_term_tb 
+# Start time: 12:37:20 on Feb 13,2026
+# Loading sv_std.std
+# Loading work.I_term_tb
+# Loading work.I_term
+add wave -position insertpoint sim:/I_term_tb/iDUT/*
+run -all
+# [2000] after init reset low | I_term=0 OK
+# [5000] after reset release | I_term=0 OK
+# ** Error: [15000] accum +16 | I_term got=0 exp=1
+#    Time: 15 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [25000] accum +16 | I_term got=1 exp=2
+#    Time: 25 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [35000] accum +16 | I_term got=2 exp=3
+#    Time: 35 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [45000] accum +16 | I_term got=3 exp=4
+#    Time: 45 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [55000] accum +16 | I_term got=4 exp=5
+#    Time: 55 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# [65000] hold hdng_vld=0 | I_term=5 OK
+# [75000] hold hdng_vld=0 | I_term=5 OK
+# [85000] hold hdng_vld=0 | I_term=5 OK
+# ** Error: [95000] resume accum +16 | I_term got=5 exp=6
+#    Time: 95 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [105000] resume accum +16 | I_term got=6 exp=7
+#    Time: 105 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [115000] clear moving=0 | I_term got=7 exp=0
+#    Time: 115 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [125000] accum -16 | I_term got=0 exp=-1
+#    Time: 125 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [135000] accum -16 | I_term got=-1 exp=-2
+#    Time: 135 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# ** Error: [145000] accum -16 | I_term got=-2 exp=-3
+#    Time: 145 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 32
+# [149000] async reset mid-run | I_term=0 OK
+# [155000] post-reset stable | I_term=0 OK
+# TB done.
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv(110)
+#    Time: 155 ns  Iteration: 1  Instance: /I_term_tb
+# 1
+# Break in Module I_term_tb at C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv line 110
+quit -sim
+# End time: 12:42:12 on Feb 13,2026, Elapsed time: 0:04:52
+# Errors: 11, Warnings: 2
+# Compile of I_term.sv was successful.
+# Compile of I_term_draft_1.sv failed with 1 errors.
+# Compile of I_term_tb.sv failed with 1 errors.
+# 3 compiles, 2 failed with 2 errors.
+# Compile of I_term.sv was successful.
+# Compile of I_term_draft_1.sv failed with 1 errors.
+# Compile of I_term_tb.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+vsim -gui work.I_term_tb
+# vsim -gui work.I_term_tb 
+# Start time: 12:45:09 on Feb 13,2026
+# Loading sv_std.std
+# Loading work.I_term_tb
+# Loading work.I_term
+add wave -position insertpoint sim:/I_term_tb/dut/*
+run -all
+# [2000] after init reset low | I_term=0 OK
+# [5000] after reset release | I_term=0 OK
+# ** Error: [15000] accum +16 | I_term got=0 exp=1
+#    Time: 15 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [25000] accum +16 | I_term got=1 exp=2
+#    Time: 25 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [35000] accum +16 | I_term got=2 exp=3
+#    Time: 35 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [45000] accum +16 | I_term got=3 exp=4
+#    Time: 45 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [55000] accum +16 | I_term got=4 exp=5
+#    Time: 55 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# [65000] hold hdng_vld=0 | I_term=5 OK
+# [75000] hold hdng_vld=0 | I_term=5 OK
+# [85000] hold hdng_vld=0 | I_term=5 OK
+# ** Error: [95000] resume accum +16 | I_term got=5 exp=6
+#    Time: 95 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [105000] resume accum +16 | I_term got=6 exp=7
+#    Time: 105 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [115000] clear moving=0 | I_term got=7 exp=0
+#    Time: 115 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [125000] accum -16 | I_term got=0 exp=-1
+#    Time: 125 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [135000] accum -16 | I_term got=-1 exp=-2
+#    Time: 135 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# ** Error: [145000] accum -16 | I_term got=-2 exp=-3
+#    Time: 145 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 33
+# [149000] async reset mid-run | I_term=0 OK
+# [155000] post-reset stable | I_term=0 OK
+# TB done.
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv(103)
+#    Time: 155 ns  Iteration: 2  Instance: /I_term_tb
+# 1
+# Break in Module I_term_tb at C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv line 103
+quit -sim
+# Compile of I_term.sv was successful.
+# Compile of I_term_draft_1.sv failed with 1 errors.
+# Compile of I_term_tb.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+# End time: 12:47:38 on Feb 13,2026, Elapsed time: 0:02:29
+# Errors: 11, Warnings: 4
+vsim -gui work.I_term_tb
+# vsim -gui work.I_term_tb 
+# Start time: 12:48:04 on Feb 13,2026
+# Loading sv_std.std
+# Loading work.I_term_tb
+# Loading work.I_term
+add wave -position insertpoint sim:/I_term_tb/dut/*
+run -all
+# [2000] after init reset low | I_term=0 OK
+# [10000] after reset release | I_term=0 OK
+# [20000] accum +16 | I_term=1 OK
+# [30000] accum +16 | I_term=2 OK
+# [40000] accum +16 | I_term=3 OK
+# [50000] accum +16 | I_term=4 OK
+# [60000] accum +16 | I_term=5 OK
+# [70000] hold hdng_vld=0 | I_term=5 OK
+# [80000] hold hdng_vld=0 | I_term=5 OK
+# [90000] hold hdng_vld=0 | I_term=5 OK
+# [100000] resume accum +16 | I_term=6 OK
+# [110000] resume accum +16 | I_term=7 OK
+# [120000] clear moving=0 | I_term=0 OK
+# [130000] accum -16 | I_term=-1 OK
+# [140000] accum -16 | I_term=-2 OK
+# [150000] accum -16 | I_term=-3 OK
+# [154000] async reset mid-run | I_term=0 OK
+# ** Error: [160000] post-reset stable | I_term got=-1 exp=0
+#    Time: 160 ns  Scope: I_term_tb.check_iterm File: C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv Line: 34
+# TB done.
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv(104)
+#    Time: 160 ns  Iteration: 1  Instance: /I_term_tb
+# 1
+# Break in Module I_term_tb at C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv line 104
+# End time: 12:50:32 on Feb 13,2026, Elapsed time: 0:02:28
+# Errors: 1, Warnings: 2

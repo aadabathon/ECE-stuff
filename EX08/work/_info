@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vI_term
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1771008457
+!i10b 1
+!s100 WjY7RUVbY=Om1SCoe=_QM1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=D4_:k<6QIGX3<9R@>;S51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z3 dC:/Users/adams/ECE551-stuff/EX08
+w1770831635
+8C:/Users/adams/ECE551-stuff/EX08/I_term.sv
+FC:/Users/adams/ECE551-stuff/EX08/I_term.sv
+!i122 7
+L0 1 30
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1771008457.000000
+!s107 C:/Users/adams/ECE551-stuff/EX08/I_term.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551-stuff/EX08/I_term.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+n@i_term
+vI_term_tb
+R0
+!s110 1771008458
+!i10b 1
+!s100 0bIf8?`H43LnXO<<bHYn61
+R1
+IoSKfXT3d;WS1OGjID;L5Y1
+R2
+S1
+R3
+w1771008444
+8C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv
+FC:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv
+!i122 8
+L0 3 105
+R4
+r1
+!s85 0
+31
+!s108 1771008458.000000
+!s107 C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551-stuff/EX08/I_term_tb.sv|
+!i113 1
+R5
+R6
+n@i_term_tb

@@ -1,0 +1,24 @@
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of sqrt.sv was successful.
+# Compile of sqrt_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.sqrt_tb
+# vsim -gui work.sqrt_tb 
+# Start time: 11:44:48 on Feb 09,2026
+# Loading sv_std.std
+# Loading work.sqrt_tb
+# Loading work.sqrt
+add wave -position insertpoint sim:/sqrt_tb/iDUT/*
+run -all
+# PASS: sqrt(64) = 8
+# PASS: sqrt(256) = 16
+# PASS: negative operand correctly set err
+# PASS: sqrt(132) = 11
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv(65)
+#    Time: 360 ns  Iteration: 1  Instance: /sqrt_tb
+# 1
+# Break in Module sqrt_tb at C:/Users/adams/ECE551-stuff/EX07/sqrt_tb.sv line 65
+# End time: 11:45:11 on Feb 09,2026, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 6
