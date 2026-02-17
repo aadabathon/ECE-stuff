@@ -1,0 +1,68 @@
+C:/Users/adams/ECE551/HW02/IR_Math.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/IR_Math.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module IR_math
+
+Top level modules:
+	IR_math
+
+} {} {}} C:/Users/adams/ECE551/HW02/I_term.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/I_term.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module I_term
+
+Top level modules:
+	I_term
+
+} {} {}} C:/Users/adams/ECE551/HW02/P_term_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/P_term_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module P_term_tb
+
+Top level modules:
+	P_term_tb
+
+} {} {}} C:/Users/adams/ECE551/HW02/I_term_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/I_term_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module I_term_tb
+
+Top level modules:
+	I_term_tb
+
+} {} {}} C:/Users/adams/ECE551/HW02/IR_Math_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/IR_Math_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module IR_Math_tb
+
+Top level modules:
+	IR_Math_tb
+
+} {} {}} C:/Users/adams/ECE551/HW02/lshift_rot.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/lshift_rot.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lshift_rot
+
+Top level modules:
+	lshift_rot
+
+} {} {}} C:/Users/adams/ECE551/HW02/HW2_prob4.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/HW2_prob4.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SRFF
+-- Compiling module dff
+-- Compiling module dff_en
+
+Top level modules:
+	SRFF
+	dff
+	dff_en
+
+} {} {}} C:/Users/adams/ECE551/HW02/P_term.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/P_term.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module P_term
+
+Top level modules:
+	P_term
+
+} {} {}} C:/Users/adams/ECE551/HW02/lshift_rot_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551/HW02/lshift_rot_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lshift_rot_tb
+
+Top level modules:
+	lshift_rot_tb
+
+} {} {}}
