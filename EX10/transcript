@@ -1,0 +1,19 @@
+# Compile of Dterm.sv was successful.
+# Compile of Dterm_tb.sv was successful.
+# Compile of I_term.sv was successful.
+# Compile of P_term.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of PID_tb.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.Dterm_tb
+# vsim -gui work.Dterm_tb 
+# Start time: 00:07:02 on Feb 20,2026
+# Loading sv_std.std
+# Loading work.Dterm_tb
+# Loading work.Dterm
+run -all
+# PASS
+# ** Note: $finish    : C:/Users/adams/ECE551/EX10/Dterm_tb.sv(104)
+#    Time: 12400 ns  Iteration: 1  Instance: /Dterm_tb
+# End time: 00:07:14 on Feb 20,2026, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
