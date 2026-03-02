@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vUART_tx
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1771867402
+!i10b 1
+!s100 Uf^gR^lXVALA=A7iM9:e:1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=>cHVcT8BdlLcG7>dP^8_2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/adams/ECE551/EX11
+w1771867256
+8C:/Users/adams/ECE551/EX11/UART_tx.sv
+FC:/Users/adams/ECE551/EX11/UART_tx.sv
+!i122 0
+L0 1 70
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1771867402.000000
+!s107 C:/Users/adams/ECE551/EX11/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX11/UART_tx.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@u@a@r@t_tx
+vUART_tx_tb
+R0
+R1
+!i10b 1
+!s100 bHICel6;_ili0_kdYVbDZ0
+R2
+IbB247PR`RfY0Odd77:@ch0
+R3
+S1
+R4
+w1771867274
+8C:/Users/adams/ECE551/EX11/UART_tx_tb.sv
+FC:/Users/adams/ECE551/EX11/UART_tx_tb.sv
+!i122 1
+L0 1 41
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551/EX11/UART_tx_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX11/UART_tx_tb.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_tx_tb

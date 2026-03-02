@@ -1,22 +1,19 @@
-# Compile of arith.sv was successful.
-# Compile of arith_tb.sv was successful.
-# Compile of dff.sv was successful.
-# Compile of gpt_synchD.sv was successful.
 # Compile of synch_detect.sv was successful.
 # Compile of synch_detect_tb.sv was successful.
-# 6 compiles, 0 failed with no errors.
+# Compile of dff.sv was successful.
+# 3 compiles, 0 failed with no errors.
 vsim -gui work.synch_detect_tb
 # vsim -gui work.synch_detect_tb 
-# Start time: 18:14:01 on Feb 02,2026
+# Start time: 18:11:02 on Feb 02,2026
 # Loading sv_std.std
 # Loading work.synch_detect_tb
 # Loading work.synch_detect
 # Loading work.dff
 run
-# YAHOO!! all tests passed!
+# ERROR: triggered on falling edge instead of rising
 # 
-# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX03/synch_detect_tb.sv(53)
-#    Time: 191 ps  Iteration: 0  Instance: /synch_detect_tb
-# Break in Module synch_detect_tb at C:/Users/adams/ECE551-stuff/EX03/synch_detect_tb.sv line 53
-# End time: 18:14:16 on Feb 02,2026, Elapsed time: 0:00:15
-# Errors: 0, Warnings: 2
+# ** Note: $stop    : C:/Users/adams/ECE551/EX03/synch_detect_tb.sv(30)
+#    Time: 90 ps  Iteration: 1  Instance: /synch_detect_tb
+# Break in Module synch_detect_tb at C:/Users/adams/ECE551/EX03/synch_detect_tb.sv line 30
+# End time: 18:11:26 on Feb 02,2026, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 4

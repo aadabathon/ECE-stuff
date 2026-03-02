@@ -1,0 +1,31 @@
+vsim -gui work.UART_tb
+# vsim -gui work.UART_tb 
+# Start time: 22:54:40 on Feb 26,2026
+# Loading sv_std.std
+# Loading work.UART_tb
+# Loading work.UART_tx
+# Loading work.UART_rx
+quit -sim
+# End time: 22:55:07 on Feb 26,2026, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 1
+# Compile of UART_tx.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tb.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.UART_tb
+# vsim -gui work.UART_tb 
+# Start time: 22:55:18 on Feb 26,2026
+# Loading sv_std.std
+# Loading work.UART_tb
+# Loading work.UART_tx
+# Loading work.UART_rx
+add wave -position insertpoint sim:/UART_tb/iDUT_tx/*
+add wave -position insertpoint sim:/UART_tb/iDUT_rx/*
+run -all
+# UART_tb: PASS
+# ** Note: $finish    : C:/Users/adams/ECE551/EX12/UART_tb.sv(126)
+#    Time: 13024590 ns  Iteration: 1  Instance: /UART_tb
+# 1
+# Break in Module UART_tb at C:/Users/adams/ECE551/EX12/UART_tb.sv line 126
+# End time: 22:56:44 on Feb 26,2026, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 2
