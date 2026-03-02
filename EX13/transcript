@@ -1,0 +1,28 @@
+# Compile of navigate.sv was successful.
+# Compile of navigate_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.navigate_tb
+# vsim -gui work.navigate_tb 
+# Start time: 13:10:32 on Mar 02,2026
+# Loading sv_std.std
+# Loading work.navigate_tb
+# Loading work.navigate
+run -all
+# GOOD0: moving should not be asserted when IDLE
+# GOOD1: moving asserted during heading change
+# GOOD2: mv_cmplt should be asserted when at_hdng
+# GOOD3: moving asserted during forward move
+# GOOD4: frwrd spd should have changed to MIN_FRWRD
+# GOOD5: frwrd spd should have incrementd to MIN_FRWRD+0x018
+# GOOD6: frwrd spd should still be MIN_FRWRD+0x018
+# GOOD7: moving should still be asserted
+# GOOD8: frwrd spd should have incremented to MIN_FRWRD+0x030
+# GOOD9: frwrd spd should have decremented fast to MIN_FRWRD+0x018
+# GOOD10: frwrd spd should be zero now
+# GOOD11: mv_cmplt should be asserted when speed hits zero
+# All tests completed...did all pass?
+# ** Note: $stop    : C:/Users/adams/ECE551/EX13/navigate_tb.sv(119)
+#    Time: 220 ps  Iteration: 1  Instance: /navigate_tb
+# Break in Module navigate_tb at C:/Users/adams/ECE551/EX13/navigate_tb.sv line 119
+# End time: 13:11:16 on Mar 02,2026, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 2
