@@ -1,0 +1,446 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vDterm
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1772514416
+!i10b 1
+!s100 `4Gl0]DIaMSlbM9i@YlGk1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_S?ONK9i3@cOnSVZ87f6e3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/adams/ECE551/HW03
+Z5 w1772510745
+Z6 8C:/Users/adams/ECE551/HW03/PID.sv
+Z7 FC:/Users/adams/ECE551/HW03/PID.sv
+!i122 429
+L0 128 43
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1772514416.000000
+Z10 !s107 C:/Users/adams/ECE551/HW03/PID.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/PID.sv|
+!i113 1
+Z12 o-work work -sv
+Z13 tCvgOpt 0
+n@dterm
+vDterm_tb
+R0
+R1
+!i10b 1
+!s100 I5V9gU[:MJ:8mIC9DUdEc3
+R2
+I?k`I8n4_0EDeLRne@YD_l0
+R3
+S1
+R4
+w1772509016
+8C:/Users/adams/ECE551/HW03/Dterm_tb.sv
+FC:/Users/adams/ECE551/HW03/Dterm_tb.sv
+!i122 428
+L0 3 152
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/adams/ECE551/HW03/Dterm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/Dterm_tb.sv|
+!i113 1
+R12
+R13
+n@dterm_tb
+vI_term
+R0
+R1
+!i10b 1
+!s100 `?1bPcm5dOY[W:7USd::z3
+R2
+I5Y]h?99=kIQjE55fk1Z_^0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 429
+L0 87 39
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@i_term
+vP_term
+R0
+R1
+!i10b 1
+!s100 ELJX@V_IV_494;Uj1LT>V2
+R2
+IY]z[Th[iWknb2HlQb`0<B1
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 429
+L0 64 21
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@p_term
+vPID
+R0
+R1
+!i10b 1
+!s100 HXm_bEN<;da0>KN7iNBLK3
+R2
+IZJJlXBRn:oh=BQ^o:m;oj1
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 429
+L0 1 61
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@p@i@d
+vPID_tb
+R0
+Z14 !s110 1772514417
+!i10b 1
+!s100 35SKTIIKafiB?3@YU9K^i3
+R2
+I:>YbU6lmGcUd=Y[]:Aa0D0
+R3
+S1
+R4
+w1772479758
+8C:/Users/adams/ECE551/HW03/PID_tb.sv
+FC:/Users/adams/ECE551/HW03/PID_tb.sv
+!i122 439
+L0 1 108
+R8
+r1
+!s85 0
+31
+Z15 !s108 1772514417.000000
+!s107 C:/Users/adams/ECE551/HW03/PID_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/PID_tb.sv|
+!i113 1
+R12
+R13
+n@p@i@d_tb
+vPWM12
+R0
+R1
+!i10b 1
+!s100 F2WMW7;5CdgUgHI2emXHj3
+R2
+IAj^79^9<g`^@ZS<zkRB0=0
+R3
+S1
+R4
+w1772508020
+8C:/Users/adams/ECE551/HW03/PWM12.sv
+FC:/Users/adams/ECE551/HW03/PWM12.sv
+!i122 430
+L0 1 51
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/adams/ECE551/HW03/PWM12.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/PWM12.sv|
+!i113 1
+R12
+R13
+n@p@w@m12
+vPWM12_tb
+R0
+R1
+!i10b 1
+!s100 0m?NVG=@zOOhjTcm172^;0
+R2
+I7?@>]m^Zk`S[^Vgj7NiAR2
+R3
+S1
+R4
+w1772507595
+8C:/Users/adams/ECE551/HW03/PWM12_tb.sv
+FC:/Users/adams/ECE551/HW03/PWM12_tb.sv
+!i122 431
+L0 2 65
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/adams/ECE551/HW03/PWM12_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/PWM12_tb.sv|
+!i113 1
+R12
+R13
+n@p@w@m12_tb
+vss_A2D
+R1
+!i10b 1
+!s100 :Ai<;01Wg_][DzgkH^AbA3
+R2
+I=Z8RX=iNIPj@eLfmIi[hA3
+R3
+R4
+Z16 w1772480080
+8C:/Users/adams/ECE551/HW03/ss_A2D.v
+FC:/Users/adams/ECE551/HW03/ss_A2D.v
+!i122 432
+L0 1 25
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/adams/ECE551/HW03/ss_A2D.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/adams/ECE551/HW03/ss_A2D.v|
+!i113 1
+Z17 o-work work
+R13
+nss_@a2@d
+vss_A2D_datapath
+R14
+!i10b 1
+!s100 >fi3bZz1Y[E[]::1hV[gR1
+R2
+Ik5@oHQizbH27o4EKWadZA0
+R3
+R4
+R16
+8C:/Users/adams/ECE551/HW03/ss_A2D_datapath.v
+FC:/Users/adams/ECE551/HW03/ss_A2D_datapath.v
+!i122 433
+L0 1 97
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/adams/ECE551/HW03/ss_A2D_datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/adams/ECE551/HW03/ss_A2D_datapath.v|
+!i113 1
+R17
+R13
+nss_@a2@d_datapath
+vss_A2D_SM
+R0
+R14
+!i10b 1
+!s100 R`=28TgOgDnh73glgBeQ?3
+R2
+Iz?<MEM3c?g6zYU0Ff[aAJ3
+R3
+S1
+R4
+w1772513942
+8C:/Users/adams/ECE551/HW03/ss_A2D_SM.sv
+FC:/Users/adams/ECE551/HW03/ss_A2D_SM.sv
+!i122 434
+L0 1 109
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adams/ECE551/HW03/ss_A2D_SM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/ss_A2D_SM.sv|
+!i113 1
+R12
+R13
+nss_@a2@d_@s@m
+vss_A2D_tb
+R14
+!i10b 1
+!s100 Pk=Hm`Q`k>O6Ld93@Vc`<1
+R2
+If7K:B7`NTLHXf;i3Ec:e]1
+R3
+R4
+R16
+8C:/Users/adams/ECE551/HW03/ss_A2D_tb.v
+FC:/Users/adams/ECE551/HW03/ss_A2D_tb.v
+!i122 435
+L0 1 50
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adams/ECE551/HW03/ss_A2D_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/adams/ECE551/HW03/ss_A2D_tb.v|
+!i113 1
+R17
+R13
+nss_@a2@d_tb
+vsynch_detect
+R0
+!s110 1772504700
+!i10b 1
+!s100 BW9gQWMi5k?KEz37D5>iZ3
+R2
+INjU[e9W9mmD4I1IN33?<]0
+R3
+S1
+R4
+R16
+8C:/Users/adams/ECE551/HW03/synch_detect.sv
+FC:/Users/adams/ECE551/HW03/synch_detect.sv
+!i122 110
+L0 1 20
+R8
+r1
+!s85 0
+31
+!s108 1772504700.000000
+!s107 C:/Users/adams/ECE551/HW03/synch_detect.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/synch_detect.sv|
+!i113 1
+R12
+R13
+vUART_rx
+R0
+R14
+!i10b 1
+!s100 3A[m_U02kjJAZMEO:fTbW3
+R2
+I^G?:73Jg9@R7HPN@Me>DB0
+R3
+S1
+R4
+w1772513453
+8C:/Users/adams/ECE551/HW03/UART_rx.sv
+FC:/Users/adams/ECE551/HW03/UART_rx.sv
+!i122 436
+L0 1 208
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adams/ECE551/HW03/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/UART_rx.sv|
+!i113 1
+R12
+R13
+n@u@a@r@t_rx
+vUART_tb
+R0
+R14
+!i10b 1
+!s100 z<;7Mz8YI;[0eYT;dMkkf3
+R2
+I1^X`DgW3?XV0ET;X;VG3I3
+R3
+S1
+R4
+w1772513529
+8C:/Users/adams/ECE551/HW03/UART_tb.sv
+FC:/Users/adams/ECE551/HW03/UART_tb.sv
+!i122 437
+L0 2 178
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adams/ECE551/HW03/UART_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/UART_tb.sv|
+!i113 1
+R12
+R13
+n@u@a@r@t_tb
+vUART_tx
+R0
+R14
+!i10b 1
+!s100 cZi<bFK_NEGGFF]3XdI5<3
+R2
+Ia8MnV>:fn>DkSlOV=C?HV2
+R3
+S1
+R4
+w1772513252
+8C:/Users/adams/ECE551/HW03/UART_tx.sv
+FC:/Users/adams/ECE551/HW03/UART_tx.sv
+!i122 438
+L0 1 170
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adams/ECE551/HW03/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/UART_tx.sv|
+!i113 1
+R12
+R13
+n@u@a@r@t_tx
+vUART_tx_tb
+R0
+R14
+!i10b 1
+!s100 Z>fXWBVU3]6:CoD@e7B7m0
+R2
+IV7[@Qo<ZI]_^RW]_7TLVN3
+R3
+S1
+R4
+w1772511485
+8C:/Users/adams/ECE551/HW03/UART_tx_tb.sv
+FC:/Users/adams/ECE551/HW03/UART_tx_tb.sv
+!i122 440
+L0 2 127
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/adams/ECE551/HW03/UART_tx_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/HW03/UART_tx_tb.sv|
+!i113 1
+R12
+R13
+n@u@a@r@t_tx_tb
