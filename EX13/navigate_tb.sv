@@ -18,9 +18,11 @@ module navigate_tb();
   wire en_fusion;			// should be asserted whenever frwrd_spd>MAX_FRWRD
   wire [10:0] frwrd_spd;	// the primary output...forward motor speed
 
-  localparam FAST_SIM = 1;	// we always simulate with FAST_SIM on
+  localparam FAST_SIM  = 1;			// we always simulate with FAST_SIM on
   localparam MIN_FRWRD = 11'h0D0;		// minimum duty at which wheels will turn
-  
+  localparam MAX_FRWRD = 11'h2A0;		// match DUT
+  localparam HALF_MAX  = (MAX_FRWRD >> 1);
+
   //////////////////////
   // Instantiate DUT //
   ////////////////////
@@ -47,6 +49,7 @@ module navigate_tb();
 	
 	assert (!moving) $display("GOOD0: moving should not be asserted when IDLE");
 	else $error("ERR0: why is moving asserted now?");	
+
 	//////////////////////////////////////////////
 	// First testcase will be a heading change //
 	////////////////////////////////////////////
@@ -107,14 +110,139 @@ module navigate_tb();
 	else $error("ERR10: expecting frwrd_spd to have decremented to zero by time %t",$time);	
 	assert (mv_cmplt) $display("GOOD11: mv_cmplt should be asserted when speed hits zero");
 	else $error("ERR11: expecting mv_cmplt to be asserted at time %t",$time);	
-	
-	///////////////////////////////////////////////////////////////////////////
-	// Now you add more tests to test moves where opening (lft/rght) occurs //
-	//                                                                     //
-	// Also...I never checked en_fusion in my testing above...do that too //
-	///////////////////////////////////////////////////////////////////////
-	
-	
+
+
+	///////////////////////////////////////////////////////
+	// Added TC3: stop at LEFT opening (rise-based stop) //
+	// + en_fusion threshold checks                      //
+	///////////////////////////////////////////////////////
+	$display("=== TC3: stop at LEFT opening rise + en_fusion ===");
+	frwrd_opn = 1;
+	lft_opn   = 0;
+	rght_opn  = 0;
+	stp_lft   = 1;
+	stp_rght  = 0;
+	hdng_rdy  = 1;
+	@(negedge clk);
+
+	strt_mv = 1;
+	@(negedge clk);
+	strt_mv = 0;
+
+	assert (frwrd_spd===MIN_FRWRD) $display("GOOD12: MIN_FRWRD loaded (TC3)");
+	else $error("ERR12: expected MIN_FRWRD (TC3) at time %t",$time);
+
+	assert (!en_fusion) $display("GOOD13: en_fusion low at MIN_FRWRD (TC3)");
+	else $error("ERR13: en_fusion should be low at time %t",$time);
+
+	// accelerate 5 ticks: MIN + 5*0x18 = MIN + 0x78 = 0x148 (< 0x150)
+	repeat(5) @(negedge clk);
+	assert (frwrd_spd===MIN_FRWRD+11'h078) $display("GOOD14: speed below HALF_MAX (TC3)");
+	else $error("ERR14: expected MIN+0x078 (TC3) at time %t",$time);
+	assert (!en_fusion) $display("GOOD15: en_fusion still low below HALF_MAX (TC3)");
+	else $error("ERR15: en_fusion should still be low at time %t",$time);
+
+	// one more tick: MIN + 0x90 = 0x160 (> 0x150) -> en_fusion should go high
+	@(negedge clk);
+	assert (frwrd_spd===MIN_FRWRD+11'h090) $display("GOOD16: speed above HALF_MAX (TC3)");
+	else $error("ERR16: expected MIN+0x090 (TC3) at time %t",$time);
+	assert (en_fusion) $display("GOOD17: en_fusion high above HALF_MAX (TC3)");
+	else $error("ERR17: en_fusion should be high at time %t",$time);
+
+	// now create a left opening RISE to trigger normal decel
+	lft_opn = 1;
+	repeat(2) @(negedge clk);
+
+	assert (moving) $display("GOOD18: still moving during normal decel (TC3)");
+	else $error("ERR18: moving should stay high during decel (TC3)");
+
+	// after 2 negedges of decel, expect down by 2*0x30 = 0x60 from 0x160 -> 0x100? BUT depends on exact cycle boundary.
+	// We only sanity check: should be decreasing and should eventually stop.
+	assert (frwrd_spd < (MIN_FRWRD+11'h090)) $display("GOOD19: speed decreasing after left rise (TC3)");
+	else $error("ERR19: speed did not start decreasing after left rise (TC3)");
+
+	// fusion should eventually drop once below threshold
+	repeat(2) @(negedge clk);
+	assert (!en_fusion) $display("GOOD20: en_fusion dropped as speed fell (TC3)");
+	else $error("ERR20: en_fusion should drop once speed <= HALF_MAX (TC3) at time %t",$time);
+
+	wait (mv_cmplt===1'b1);
+	#1;
+	assert (frwrd_spd===11'h000) $display("GOOD21: speed is zero at mv_cmplt (TC3)");
+	else $error("ERR21: expected speed 0 at mv_cmplt (TC3) at time %t",$time);
+	@(negedge clk);
+	lft_opn = 0;
+
+
+	////////////////////////////////////////////////////////
+	// Added TC4: stop at RIGHT opening (rise-based stop) //
+	////////////////////////////////////////////////////////
+	$display("=== TC4: stop at RIGHT opening rise ===");
+	frwrd_opn = 1;
+	lft_opn   = 0;
+	rght_opn  = 0;
+	stp_lft   = 0;
+	stp_rght  = 1;
+	hdng_rdy  = 1;
+	@(negedge clk);
+
+	strt_mv = 1;
+	@(negedge clk);
+	strt_mv = 0;
+
+	assert (frwrd_spd===MIN_FRWRD) $display("GOOD22: MIN_FRWRD loaded (TC4)");
+	else $error("ERR22: expected MIN_FRWRD (TC4) at time %t",$time);
+
+	repeat(4) @(negedge clk); // get moving a bit
+	rght_opn = 1;             // create rise
+	repeat(2) @(negedge clk);
+
+	assert (frwrd_spd < (MIN_FRWRD+11'h060)) $display("GOOD23: speed decreasing after right rise (TC4)");
+	else $error("ERR23: speed did not start decreasing after right rise (TC4)");
+
+	wait (mv_cmplt===1'b1);
+	#1;
+	assert (frwrd_spd===11'h000) $display("GOOD24: speed is zero at mv_cmplt (TC4)");
+	else $error("ERR24: expected speed 0 at mv_cmplt (TC4) at time %t",$time);
+	@(negedge clk);
+	rght_opn = 0;
+
+
+	////////////////////////////////////////////////////////////////////////
+	// Added TC5: opening already asserted should NOT insta-stop (edge det) //
+	////////////////////////////////////////////////////////////////////////
+	$display("=== TC5: opening already high should not stop until NEW rise ===");
+	frwrd_opn = 1;
+	stp_lft   = 1;
+	stp_rght  = 0;
+	hdng_rdy  = 1;
+
+	// keep left opening high before starting move
+	lft_opn = 1;
+	repeat(3) @(negedge clk);
+
+	strt_mv = 1;
+	@(negedge clk);
+	strt_mv = 0;
+
+	@(negedge clk);
+	assert (frwrd_spd===MIN_FRWRD+11'h018) $display("GOOD25: did not insta-stop w/ lft_opn already high (TC5)");
+	else $error("ERR25: insta-stopped with lft_opn already high (TC5) at time %t",$time);
+
+	// now force a new rise: drop then raise
+	lft_opn = 0;
+	@(negedge clk);
+	lft_opn = 1;
+	repeat(2) @(negedge clk);
+
+	wait (mv_cmplt===1'b1);
+	#1;
+	assert (frwrd_spd===11'h000) $display("GOOD26: stopped on NEW left rise (TC5)");
+	else $error("ERR26: expected speed 0 at mv_cmplt (TC5) at time %t",$time);
+	@(negedge clk);
+	lft_opn = 0;
+
+
 	$display("All tests completed...did all pass?");
 	$stop();
 	
