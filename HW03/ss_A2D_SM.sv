@@ -104,6 +104,7 @@ module ss_A2D_SM(clk,rst_n,strt_cnv,smp_eq_8,gt,clr_dac,inc_dac,
 					A2D_state_d = CNV;
 				end
 			end
+			default : A2D_state_d = IDLE;
 	endcase
   end
 endmodule

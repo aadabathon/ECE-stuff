@@ -3,10 +3,17 @@
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.navigate_tb
 # vsim -gui work.navigate_tb 
-# Start time: 11:12:30 on Mar 04,2026
+# Start time: 11:26:15 on Mar 04,2026
 # Loading sv_std.std
 # Loading work.navigate_tb
 # Loading work.navigate
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 2 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 2 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 2 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 2 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
 run -all
 # GOOD0: moving should not be asserted when IDLE
 # GOOD1: moving asserted during heading change
@@ -20,98 +27,27 @@ run -all
 # GOOD9: frwrd spd should have decremented fast to MIN_FRWRD+0x018
 # GOOD10: frwrd spd should be zero now
 # GOOD11: mv_cmplt should be asserted when speed hits zero
+# === TC3: stop at LEFT opening rise + en_fusion ===
+# GOOD12: MIN_FRWRD loaded (TC3)
+# GOOD13: en_fusion low at MIN_FRWRD (TC3)
+# GOOD14: speed below HALF_MAX (TC3)
+# GOOD15: en_fusion still low below HALF_MAX (TC3)
+# GOOD16: speed above HALF_MAX (TC3)
+# GOOD17: en_fusion high above HALF_MAX (TC3)
+# GOOD18: still moving during normal decel (TC3)
+# GOOD19: speed decreasing after left rise (TC3)
+# GOOD20: en_fusion dropped as speed fell (TC3)
+# GOOD21: speed is zero at mv_cmplt (TC3)
+# === TC4: stop at RIGHT opening rise ===
+# GOOD22: MIN_FRWRD loaded (TC4)
+# GOOD23: speed decreasing after right rise (TC4)
+# GOOD24: speed is zero at mv_cmplt (TC4)
+# === TC5: opening already high should not stop until NEW rise ===
+# GOOD25: did not insta-stop w/ lft_opn already high (TC5)
+# GOOD26: stopped on NEW left rise (TC5)
 # All tests completed...did all pass?
-# ** Note: $stop    : C:/Users/adams/ECE551/EX13/navigate_tb.sv(119)
-#    Time: 220 ps  Iteration: 1  Instance: /navigate_tb
-# Break in Module navigate_tb at C:/Users/adams/ECE551/EX13/navigate_tb.sv line 119
-quit -sim
-# End time: 11:20:22 on Mar 04,2026, Elapsed time: 0:07:52
+# ** Note: $stop    : C:/Users/adams/ECE551/EX13/navigate_tb.sv(247)
+#    Time: 660 ps  Iteration: 1  Instance: /navigate_tb
+# Break in Module navigate_tb at C:/Users/adams/ECE551/EX13/navigate_tb.sv line 247
+# End time: 11:26:24 on Mar 04,2026, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 2
-# Compile of navigate.sv was successful.
-# Compile of navigate_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.navigate_tb
-# vsim -gui work.navigate_tb 
-# Start time: 11:20:42 on Mar 04,2026
-# Loading sv_std.std
-# Loading work.navigate_tb
-# Loading work.navigate
-add wave -position insertpoint sim:/navigate_tb/iDUT/*
-run -all
-# GOOD0: moving should not be asserted when IDLE
-# GOOD1: moving asserted during heading change
-# GOOD2: mv_cmplt should be asserted when at_hdng
-# GOOD3: moving asserted during forward move
-# GOOD4: frwrd spd should have changed to MIN_FRWRD
-# GOOD5: frwrd spd should have incrementd to MIN_FRWRD+0x018
-# GOOD6: frwrd spd should still be MIN_FRWRD+0x018
-# GOOD7: moving should still be asserted
-# GOOD8: frwrd spd should have incremented to MIN_FRWRD+0x030
-# GOOD9: frwrd spd should have decremented fast to MIN_FRWRD+0x018
-# GOOD10: frwrd spd should be zero now
-# GOOD11: mv_cmplt should be asserted when speed hits zero
-# === TC3: stop at LEFT opening rise + en_fusion ===
-# GOOD12: MIN_FRWRD loaded (TC3)
-# GOOD13: en_fusion low at MIN_FRWRD (TC3)
-# GOOD14: speed below HALF_MAX (TC3)
-# GOOD15: en_fusion still low below HALF_MAX (TC3)
-# GOOD16: speed above HALF_MAX (TC3)
-# GOOD17: en_fusion high above HALF_MAX (TC3)
-# GOOD18: still moving during normal decel (TC3)
-# GOOD19: speed decreasing after left rise (TC3)
-# GOOD20: en_fusion dropped as speed fell (TC3)
-# GOOD21: speed is zero at mv_cmplt (TC3)
-# === TC4: stop at RIGHT opening rise ===
-# GOOD22: MIN_FRWRD loaded (TC4)
-# GOOD23: speed decreasing after right rise (TC4)
-# GOOD24: speed is zero at mv_cmplt (TC4)
-# === TC5: opening already high should not stop until NEW rise ===
-# GOOD25: did not insta-stop w/ lft_opn already high (TC5)
-# GOOD26: stopped on NEW left rise (TC5)
-# All tests completed...did all pass?
-# ** Note: $stop    : C:/Users/adams/ECE551/EX13/navigate_tb.sv(247)
-#    Time: 660 ps  Iteration: 1  Instance: /navigate_tb
-# Break in Module navigate_tb at C:/Users/adams/ECE551/EX13/navigate_tb.sv line 247
-# WARNING: No extended dataflow license exists
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# GOOD0: moving should not be asserted when IDLE
-# GOOD1: moving asserted during heading change
-# GOOD2: mv_cmplt should be asserted when at_hdng
-# GOOD3: moving asserted during forward move
-# GOOD4: frwrd spd should have changed to MIN_FRWRD
-# GOOD5: frwrd spd should have incrementd to MIN_FRWRD+0x018
-# GOOD6: frwrd spd should still be MIN_FRWRD+0x018
-# GOOD7: moving should still be asserted
-# GOOD8: frwrd spd should have incremented to MIN_FRWRD+0x030
-# GOOD9: frwrd spd should have decremented fast to MIN_FRWRD+0x018
-# GOOD10: frwrd spd should be zero now
-# GOOD11: mv_cmplt should be asserted when speed hits zero
-# === TC3: stop at LEFT opening rise + en_fusion ===
-# GOOD12: MIN_FRWRD loaded (TC3)
-# GOOD13: en_fusion low at MIN_FRWRD (TC3)
-# GOOD14: speed below HALF_MAX (TC3)
-# GOOD15: en_fusion still low below HALF_MAX (TC3)
-# GOOD16: speed above HALF_MAX (TC3)
-# GOOD17: en_fusion high above HALF_MAX (TC3)
-# GOOD18: still moving during normal decel (TC3)
-# GOOD19: speed decreasing after left rise (TC3)
-# GOOD20: en_fusion dropped as speed fell (TC3)
-# GOOD21: speed is zero at mv_cmplt (TC3)
-# === TC4: stop at RIGHT opening rise ===
-# GOOD22: MIN_FRWRD loaded (TC4)
-# GOOD23: speed decreasing after right rise (TC4)
-# GOOD24: speed is zero at mv_cmplt (TC4)
-# === TC5: opening already high should not stop until NEW rise ===
-# GOOD25: did not insta-stop w/ lft_opn already high (TC5)
-# GOOD26: stopped on NEW left rise (TC5)
-# All tests completed...did all pass?
-# ** Note: $stop    : C:/Users/adams/ECE551/EX13/navigate_tb.sv(247)
-#    Time: 660 ps  Iteration: 1  Instance: /navigate_tb
-# Break in Module navigate_tb at C:/Users/adams/ECE551/EX13/navigate_tb.sv line 247
-# End time: 11:22:35 on Mar 04,2026, Elapsed time: 0:01:53
-# Errors: 0, Warnings: 1

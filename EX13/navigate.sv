@@ -100,7 +100,6 @@ module navigate(clk,rst_n,strt_hdng,strt_mv,stp_lft,stp_rght,mv_cmplt,hdng_rdy,m
 		  if (strt_hdng) begin
 			nav_state_d = HDNG_CHANGE;
 		  end else if (strt_mv) begin
-			// TB expects MIN_FRWRD to load on the SAME posedge that sees strt_mv
 			moving     = 1'b1;
 			init_frwrd = 1'b1;
 			nav_state_d = MV_ACCEL;

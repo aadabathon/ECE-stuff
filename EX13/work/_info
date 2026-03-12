@@ -11,24 +11,24 @@ cModel Technology
 dC:/intelFPGA/20.1
 vnavigate
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1772644837
+Z1 !s110 1772645170
 !i10b 1
-!s100 MX:<@2DVlP=e^1ce8Ne<n2
+!s100 _P_Qhoe?d8RhYZ6MooJg00
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I?KZIUJ:3mQR;lVCe4[[dz1
+IBf^SBLzPaC[E6^RH2dkk`0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dC:/Users/adams/ECE551/EX13
-w1772479758
+w1772645149
 8C:/Users/adams/ECE551/EX13/navigate.sv
 FC:/Users/adams/ECE551/EX13/navigate.sv
-!i122 8
-L0 1 147
+!i122 10
+L0 1 146
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1772644837.000000
+Z6 !s108 1772645170.000000
 !s107 C:/Users/adams/ECE551/EX13/navigate.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX13/navigate.sv|
 !i113 1
@@ -47,7 +47,7 @@ R4
 w1772644770
 8C:/Users/adams/ECE551/EX13/navigate_tb.sv
 FC:/Users/adams/ECE551/EX13/navigate_tb.sv
-!i122 9
+!i122 11
 L0 1 254
 R5
 r1
