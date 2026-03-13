@@ -1,0 +1,92 @@
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.CommTB
+# vsim -gui work.CommTB 
+# Start time: 19:39:06 on Mar 12,2026
+# Loading sv_std.std
+# Loading work.CommTB
+# Loading work.RemoteComm
+# Loading work.UART
+# Loading work.UART_tx
+# Loading work.UART_rx
+# Loading work.UART_wrapper
+add wave -position insertpoint sim:/CommTB/iDUT/*
+run -all
+# PASS: UART_wrapper + RemoteComm end-to-end test succeeded.
+# ** Note: $finish    : C:/Users/adams/ECE551/EX14/CommTB.sv(159)
+#    Time: 1536870 ps  Iteration: 1  Instance: /CommTB
+# 1
+# Break in Module CommTB at C:/Users/adams/ECE551/EX14/CommTB.sv line 159
+quit -sim
+# End time: 19:47:07 on Mar 12,2026, Elapsed time: 0:08:01
+# Errors: 0, Warnings: 5
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.CommTB
+# vsim -gui work.CommTB 
+# Start time: 19:47:15 on Mar 12,2026
+# Loading sv_std.std
+# Loading work.CommTB
+# Loading work.RemoteComm
+# Loading work.UART
+# Loading work.UART_tx
+# Loading work.UART_rx
+# Loading work.UART_wrapper
+add wave -position insertpoint sim:/CommTB/iDUT/*
+run -all
+# INFO: Starting transaction cmd=abcd resp=5a
+# INFO: Transaction passed cmd=abcd resp=5a
+# INFO: Starting transaction cmd=1234 resp=c3
+# ** Error: FAIL: RemoteComm received wrong response byte Expected c3, got 5a
+#    Time: 2578910 ps  Scope: CommTB.expect_equal_8 File: C:/Users/adams/ECE551/EX14/CommTB.sv Line: 153
+# ** Fatal: Assertion error.
+#    Time: 2578910 ps  Scope: CommTB.expect_equal_8 File: C:/Users/adams/ECE551/EX14/CommTB.sv Line: 154
+# ** Note: $finish    : C:/Users/adams/ECE551/EX14/CommTB.sv(154)
+#    Time: 2578910 ps  Iteration: 1  Instance: /CommTB
+# 1
+# Break in Task expect_equal_8 at C:/Users/adams/ECE551/EX14/CommTB.sv line 154
+quit -sim
+# End time: 19:50:13 on Mar 12,2026, Elapsed time: 0:02:58
+# Errors: 2, Warnings: 2
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.CommTB
+# vsim -gui work.CommTB 
+# Start time: 19:50:22 on Mar 12,2026
+# Loading sv_std.std
+# Loading work.CommTB
+# Loading work.RemoteComm
+# Loading work.UART
+# Loading work.UART_tx
+# Loading work.UART_rx
+# Loading work.UART_wrapper
+add wave -position insertpoint sim:/CommTB/iDUT/*
+run -all
+# INFO: Starting transaction cmd=abcd resp=5a
+# INFO: Transaction passed cmd=abcd resp=5a
+# INFO: Starting transaction cmd=1234 resp=c3
+# INFO: Transaction passed cmd=1234 resp=c3
+# INFO: Starting transaction cmd=00ff resp=81
+# INFO: Transaction passed cmd=00ff resp=81
+# PASS: All CommTB end-to-end checks succeeded.
+# ** Note: $finish    : C:/Users/adams/ECE551/EX14/CommTB.sv(252)
+#    Time: 4610530 ps  Iteration: 1  Instance: /CommTB
+# 1
+# Break in Module CommTB at C:/Users/adams/ECE551/EX14/CommTB.sv line 252
+# End time: 19:50:58 on Mar 12,2026, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 2

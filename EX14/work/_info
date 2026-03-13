@@ -1,0 +1,167 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vCommTB
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1773363015
+!i10b 1
+!s100 JQGUa2aaf:7ko<B4Y;WP]1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I6ga>EAHL5mnl_GM<Vk:`k0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/adams/ECE551/EX14
+w1773363004
+8C:/Users/adams/ECE551/EX14/CommTB.sv
+FC:/Users/adams/ECE551/EX14/CommTB.sv
+!i122 12
+L0 1 255
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1773363015.000000
+!s107 C:/Users/adams/ECE551/EX14/CommTB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX14/CommTB.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@comm@t@b
+vRemoteComm
+R0
+R1
+!i10b 1
+!s100 MhI;lMGOiCD0ZR6;VG>k21
+R2
+IR`fkI1U^VfXVN6SRFlXhH0
+R3
+S1
+R4
+w1773361676
+8C:/Users/adams/ECE551/EX14/RemoteComm.sv
+FC:/Users/adams/ECE551/EX14/RemoteComm.sv
+!i122 13
+L0 1 149
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551/EX14/RemoteComm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX14/RemoteComm.sv|
+!i113 1
+R7
+R8
+n@remote@comm
+vUART
+R0
+R1
+!i10b 1
+!s100 1c7jdaCh948Z2HJGWz_II2
+R2
+IX_g8YX9je]Vk[She6ZA1H1
+R3
+S1
+R4
+w1773348692
+8C:/Users/adams/ECE551/EX14/UART.sv
+FC:/Users/adams/ECE551/EX14/UART.sv
+!i122 14
+L0 1 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551/EX14/UART.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX14/UART.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t
+vUART_rx
+R0
+R1
+!i10b 1
+!s100 3A[m_U02kjJAZMEO:fTbW3
+R2
+IkaG[IFc=YEhB8jc]SIW1e3
+R3
+S1
+R4
+w1772513453
+8C:/Users/adams/ECE551/EX14/UART_rx.sv
+FC:/Users/adams/ECE551/EX14/UART_rx.sv
+!i122 15
+L0 1 208
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551/EX14/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX14/UART_rx.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_rx
+vUART_tx
+R0
+R1
+!i10b 1
+!s100 cZi<bFK_NEGGFF]3XdI5<3
+R2
+II;NDOKF8XWWlzXKSE?0ZE0
+R3
+S1
+R4
+w1772513252
+8C:/Users/adams/ECE551/EX14/UART_tx.sv
+FC:/Users/adams/ECE551/EX14/UART_tx.sv
+!i122 16
+L0 1 170
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551/EX14/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX14/UART_tx.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_tx
+vUART_wrapper
+R0
+R1
+!i10b 1
+!s100 E:lTn?NZ1SPnZf6M:oe@X3
+R2
+I>C>GDR6m=>6DS:IJf=I?l3
+R3
+S1
+R4
+w1773359834
+8C:/Users/adams/ECE551/EX14/UART_wrapper.sv
+FC:/Users/adams/ECE551/EX14/UART_wrapper.sv
+!i122 17
+L0 1 124
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/adams/ECE551/EX14/UART_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/ECE551/EX14/UART_wrapper.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_wrapper
