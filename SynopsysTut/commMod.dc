@@ -1,0 +1,33 @@
+read_file -format verilog { UART_tx.v UART_rcv.v CRC.v commMod.v }
+
+set current_design commMod
+
+create_clock -name "clk" -period 2 -waveform {0 1} {clk}
+
+set_dont_touch_network [find port clk]
+
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+
+set_input_delay -clock clk 0.5 $prim_inputs
+
+set_driving_cell -lib_cell NAND2X1_RVT -library saed32rvt_tt0p85v25c $prim_inputs
+
+set_drive 0.0001 rst_n
+
+set_output_delay -clock clk 0.5 [all_outputs]
+
+set_load 60 [all_outputs]
+
+set_wire_load_model -name 16000 -library saed32rvt_tt0p85v25c
+
+set_max_transition 0.1 [current_design]
+
+compile -map_effort medium
+
+set_clock_uncertainty 0.15 clk
+
+set_fix_hold clk
+
+compile -map_effort medium
+
+write -format verilog commMod -output commMod.vg
