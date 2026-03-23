@@ -1,0 +1,6 @@
+# Compile of inert_intf_tb.sv failed with 6 errors.
+# Compile of inertial_integrator.sv was successful.
+# Compile of SPI_iNEMO2.sv was successful.
+# Compile of SPI_main.sv was successful.
+# Compile of inert_intf.sv was successful.
+# 5 compiles, 1 failed with 6 errors.
