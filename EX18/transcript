@@ -1,0 +1,141 @@
+# Compile of inert_intf_test.sv was successful.
+# Compile of inert_intf_test_tb.sv failed with 3 errors.
+# Compile of reset_synch.sv was successful.
+# 3 compiles, 1 failed with 3 errors.
+vlog -sv inert_intf_test.sv inert_intf_test_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:31:13 on Mar 27,2026
+# vlog -reportprogress 300 -sv inert_intf_test.sv inert_intf_test_tb.sv 
+# -- Compiling module inert_intf_test
+# -- Compiling module inert_intf_test_tb
+# ** Error: inert_intf_test_tb.sv(94): Automatic variable not allowed in force statement: hdg
+# ** Warning: inert_intf_test_tb.sv(220): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Error: (vlog-13069) inert_intf_test_tb.sv(225): near ");": syntax error, unexpected STRING_LITERAL, expecting ')'.
+# ** Warning: inert_intf_test_tb.sv(225): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Warning: inert_intf_test_tb.sv(227): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Warning: inert_intf_test_tb.sv(230): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Warning: inert_intf_test_tb.sv(248): (vlog-2643) Unterminated string literal continues onto next line.
+# ** Error: inert_intf_test_tb.sv(252): Unterminated string literal started on line 248.
+# End time: 12:31:13 on Mar 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 5
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog -sv inert_intf_test_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:35:04 on Mar 27,2026
+# vlog -reportprogress 300 -sv inert_intf_test_tb.sv 
+# -- Compiling module inert_intf_test_tb
+# 
+# Top level modules:
+# 	inert_intf_test_tb
+# End time: 12:35:04 on Mar 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of inert_intf_test.sv was successful.
+# Compile of inert_intf_test_tb.sv was successful.
+# Compile of reset_synch.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.inert_intf_test_tb
+# vsim -gui work.inert_intf_test_tb 
+# Start time: 12:35:31 on Mar 27,2026
+# Loading sv_std.std
+# Loading work.inert_intf_test_tb
+# Loading work.inert_intf_test
+# Loading work.reset_synch
+# ** Error: (vsim-3033) Instantiation of 'inert_intf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /inert_intf_test_tb/dut File: C:/Users/adams/ECE551-stuff/EX18/inert_intf_test.sv Line: 43
+#         Searched libraries:
+#             C:/Users/adams/ECE551-stuff/EX18/work
+# Error loading design
+# End time: 12:35:31 on Mar 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 6
+# Compile of inert_intf_test.sv was successful.
+# Compile of inert_intf_test_tb.sv was successful.
+# Compile of reset_synch.sv was successful.
+# Compile of inert_intf.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.inert_intf_test_tb
+# vsim -gui work.inert_intf_test_tb 
+# Start time: 12:36:01 on Mar 27,2026
+# Loading sv_std.std
+# Loading work.inert_intf_test_tb
+# Loading work.inert_intf_test
+# Loading work.reset_synch
+# Loading work.inert_intf
+# ** Error: (vsim-3033) Instantiation of 'SPI_main' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /inert_intf_test_tb/dut/interface1 File: C:/Users/adams/ECE551-stuff/EX17/inert_intf.sv Line: 142
+#         Searched libraries:
+#             C:/Users/adams/ECE551-stuff/EX18/work
+# ** Error: (vsim-3033) Instantiation of 'inertial_integrator' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /inert_intf_test_tb/dut/interface1 File: C:/Users/adams/ECE551-stuff/EX17/inert_intf.sv Line: 164
+#         Searched libraries:
+#             C:/Users/adams/ECE551-stuff/EX18/work
+# Error loading design
+# End time: 12:36:02 on Mar 27,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 3
+# Compile of inert_intf_test.sv was successful.
+# Compile of inert_intf_test_tb.sv was successful.
+# Compile of reset_synch.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of SPI_main.sv was successful.
+# Compile of inertial_integrator.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.inert_intf_test_tb
+# vsim -gui work.inert_intf_test_tb 
+# Start time: 12:37:04 on Mar 27,2026
+# Loading sv_std.std
+# Loading work.inert_intf_test_tb
+# Loading work.inert_intf_test
+# Loading work.reset_synch
+# Loading work.inert_intf
+# Loading work.SPI_main
+# Loading work.inertial_integrator
+run -all
+# TEST1: reset synchronizer
+# TEST1 passed
+# TEST2: wrapper FSM IDLE -> CAL
+# TEST2 passed
+# TEST3: CAL display
+# ** Fatal: reset_synch fail: rst_n should still be low after first negedge
+#    Time: 161 ns  Scope: inert_intf_test_tb.sync_reset_release File: C:/Users/adams/ECE551-stuff/EX18/inert_intf_test_tb.sv Line: 60
+# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX18/inert_intf_test_tb.sv(60)
+#    Time: 161 ns  Iteration: 0  Instance: /inert_intf_test_tb
+# 1
+# Break in Task sync_reset_release at C:/Users/adams/ECE551-stuff/EX18/inert_intf_test_tb.sv line 60
+quit -sim
+# End time: 12:40:30 on Mar 27,2026, Elapsed time: 0:03:26
+# Errors: 1, Warnings: 4
+# Compile of inert_intf_test.sv was successful.
+# Compile of inert_intf_test_tb.sv was successful.
+# Compile of reset_synch.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of SPI_main.sv was successful.
+# Compile of inertial_integrator.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.inert_intf_test_tb
+# vsim -gui work.inert_intf_test_tb 
+# Start time: 12:40:41 on Mar 27,2026
+# Loading sv_std.std
+# Loading work.inert_intf_test_tb
+# Loading work.inert_intf_test
+# Loading work.reset_synch
+# Loading work.inert_intf
+# Loading work.SPI_main
+# Loading work.inertial_integrator
+run -all
+# TEST1: reset synchronizer
+# TEST1 passed
+# TEST2: wrapper FSM IDLE -> CAL
+# TEST2 passed
+# TEST3: CAL display
+# TEST3 passed
+# TEST4: exit CAL on cal_done
+# TEST4 passed
+# TEST5: DISP sticky except reset
+# TEST5 passed
+# TEST6: reset from CAL and DISP
+# TEST6 passed
+# All tests passed
+# ** Note: $stop    : C:/Users/adams/ECE551-stuff/EX18/inert_intf_test_tb.sv(252)
+#    Time: 772 ns  Iteration: 0  Instance: /inert_intf_test_tb
+# Break in Module inert_intf_test_tb at C:/Users/adams/ECE551-stuff/EX18/inert_intf_test_tb.sv line 252
+# End time: 12:40:53 on Mar 27,2026, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 2
