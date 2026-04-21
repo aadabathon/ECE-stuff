@@ -1,0 +1,196 @@
+# Compile of DutyScaleROM.sv was successful.
+# Compile of maze_solve.sv was successful.
+# Compile of maze_solve_tb.sv was successful.
+# Compile of MtrDrv.sv was successful.
+# Compile of MtrDrv_tb.sv was successful.
+# Compile of PWM12.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.MtrDrv_tb
+# vsim -gui work.MtrDrv_tb 
+# Start time: 12:46:00 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.MtrDrv_tb
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 2 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 2 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 2 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 2 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+run -all
+# t=0 rst_n=0 vbatt=db0 lft_spd=000 rght_spd=000 lftPWM1=0 lftPWM2=0 rghtPWM1=0 rghtPWM2=0
+# 
+# === TEST 1: zero input, ~50% duty ===
+# t=15 rst_n=1 vbatt=db0 lft_spd=000 rght_spd=000 lftPWM1=0 lftPWM2=0 rghtPWM1=0 rghtPWM2=0
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# t=465 rst_n=1 vbatt=db0 lft_spd=000 rght_spd=000 lftPWM1=1 lftPWM2=0 rghtPWM1=1 rghtPWM2=0
+# [1025] vbatt=db0 lftPWM1 high count=56 rghtPWM1 high count=56
+# t=1025 rst_n=1 vbatt=d00 lft_spd=000 rght_spd=000 lftPWM1=1 lftPWM2=0 rghtPWM1=1 rghtPWM2=0
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [2035] vbatt=d00 lftPWM1 high count=100 rghtPWM1 high count=100
+# ** Fatal: TEST 1 FAILED at vbatt=d00: expected about 50 high counts out of 100
+#    Time: 2035 ps  Scope: MtrDrv_tb File: C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv Line: 90
+# ** Note: $finish    : C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv(90)
+#    Time: 2035 ps  Iteration: 1  Instance: /MtrDrv_tb
+# 1
+# Break in Module MtrDrv_tb at C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv line 90
+quit -sim
+# End time: 12:47:58 on Apr 17,2026, Elapsed time: 0:01:58
+# Errors: 1, Warnings: 2
+# Compile of DutyScaleROM.sv was successful.
+# Compile of maze_solve.sv was successful.
+# Compile of maze_solve_tb.sv was successful.
+# Compile of MtrDrv.sv was successful.
+# Compile of MtrDrv_tb.sv was successful.
+# Compile of PWM12.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.MtrDrv_tb
+# vsim -gui work.MtrDrv_tb 
+# Start time: 12:48:09 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.MtrDrv_tb
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+run -all
+# 
+# === TEST 1: zero input, ~50% duty ===
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [40985] vbatt=db0 lftPWM1 high count=2004 rghtPWM1 high count=2004
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [81955] vbatt=d00 lftPWM1 high count=2004 rghtPWM1 high count=2004
+#     scale_factor=0868 lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [122925] vbatt=ff0 lftPWM1 high count=2004 rghtPWM1 high count=2004
+# TEST 1 PASSED
+# 
+# === TEST 2: left motor positive command at unity battery ===
+#     scale_factor=06db lft_prod=1b6525 rght_prod=000000 lft_scaled=36c rght_scaled=000 lft_final=b6c rght_final=800
+# [163895] lftPWM1 high count=3025 rghtPWM1 high count=2004
+# TEST 2 PASSED
+# 
+# === TEST 3: left motor positive command at lower battery ===
+#     scale_factor=07fc lft_prod=1fe804 rght_prod=000000 lft_scaled=3fd rght_scaled=000 lft_final=bfd rght_final=800
+# [204865] lftPWM1 high count=3078 rghtPWM1 high count=2004
+# TEST 3 PASSED
+# 
+# === TEST 4: right motor inverted behavior ===
+#     scale_factor=0868 lft_prod=000000 rght_prod=64e000 lft_scaled=000 rght_scaled=7ff lft_final=800 rght_final=001
+# [245835] lftPWM1 high count=2004 rghtPWM1 high count=0
+# ** Fatal: TEST 4 FAILED: expected rghtPWM1 > 2048 highs out of 4096, got 0
+#    Time: 245835 ps  Scope: MtrDrv_tb File: C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv Line: 157
+# ** Note: $finish    : C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv(157)
+#    Time: 245835 ps  Iteration: 1  Instance: /MtrDrv_tb
+# 1
+# Break in Module MtrDrv_tb at C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv line 157
+quit -sim
+# End time: 12:49:08 on Apr 17,2026, Elapsed time: 0:00:59
+# Errors: 1, Warnings: 2
+# Compile of DutyScaleROM.sv was successful.
+# Compile of maze_solve.sv was successful.
+# Compile of maze_solve_tb.sv was successful.
+# Compile of MtrDrv.sv was successful.
+# Compile of MtrDrv_tb.sv was successful.
+# Compile of PWM12.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.MtrDrv_tb
+# vsim -gui work.MtrDrv_tb 
+# Start time: 12:49:15 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.MtrDrv_tb
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+run -all
+# 
+# === TEST 1: zero input, ~50% duty ===
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [40985] vbatt=db0 lftPWM1 high count=2004 rghtPWM1 high count=2004
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [81955] vbatt=d00 lftPWM1 high count=2004 rghtPWM1 high count=2004
+#     scale_factor=0868 lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [122925] vbatt=ff0 lftPWM1 high count=2004 rghtPWM1 high count=2004
+# TEST 1 PASSED
+# 
+# === TEST 2: left motor positive command at unity battery ===
+#     scale_factor=06db lft_prod=1b6525 rght_prod=000000 lft_scaled=36c rght_scaled=000 lft_final=b6c rght_final=800
+# [163895] lftPWM1 high count=3025 rghtPWM1 high count=2004
+# TEST 2 PASSED
+# 
+# === TEST 3: left motor positive command at lower battery ===
+#     scale_factor=07fc lft_prod=1fe804 rght_prod=000000 lft_scaled=3fd rght_scaled=000 lft_final=bfd rght_final=800
+# [204865] lftPWM1 high count=3078 rghtPWM1 high count=2004
+# TEST 3 PASSED
+# 
+# === TEST 4: right motor inverted behavior ===
+#     scale_factor=0868 lft_prod=000000 rght_prod=64e000 lft_scaled=000 rght_scaled=7ff lft_final=800 rght_final=001
+# [245835] lftPWM1 high count=2004 rghtPWM1 high count=0
+# TEST 4 PASSED
+# 
+# === TEST 5: both motors driven together ===
+#     scale_factor=06db lft_prod=0db600 rght_prod=5ffa00 lft_scaled=1b6 rght_scaled=7ff lft_final=9b6 rght_final=001
+# [286805] lftPWM1 high count=2503 rghtPWM1 high count=0
+# ** Fatal: TEST 5 FAILED: one of the PWM outputs is stuck high or low
+#    Time: 286805 ps  Scope: MtrDrv_tb File: C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv Line: 177
+# ** Note: $finish    : C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv(177)
+#    Time: 286805 ps  Iteration: 1  Instance: /MtrDrv_tb
+# 1
+# Break in Module MtrDrv_tb at C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv line 177
+quit -sim
+# End time: 12:50:02 on Apr 17,2026, Elapsed time: 0:00:47
+# Errors: 1, Warnings: 2
+# Compile of DutyScaleROM.sv was successful.
+# Compile of maze_solve.sv was successful.
+# Compile of maze_solve_tb.sv was successful.
+# Compile of MtrDrv.sv was successful.
+# Compile of MtrDrv_tb.sv was successful.
+# Compile of PWM12.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.MtrDrv_tb
+# vsim -gui work.MtrDrv_tb 
+# Start time: 12:50:09 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.MtrDrv_tb
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+run -all
+# 
+# === TEST 1: zero input, ~50% duty ===
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [40985] vbatt=db0 lftPWM1 high count=2004 rghtPWM1 high count=2004
+#     scale_factor=07fc lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [81955] vbatt=d00 lftPWM1 high count=2004 rghtPWM1 high count=2004
+#     scale_factor=0868 lft_prod=000000 rght_prod=000000 lft_scaled=000 rght_scaled=000 lft_final=800 rght_final=800
+# [122925] vbatt=ff0 lftPWM1 high count=2004 rghtPWM1 high count=2004
+# TEST 1 PASSED
+# 
+# === TEST 2: left motor positive command at unity battery ===
+#     scale_factor=06db lft_prod=1b6525 rght_prod=000000 lft_scaled=36c rght_scaled=000 lft_final=b6c rght_final=800
+# [163895] lftPWM1 high count=3025 rghtPWM1 high count=2004
+# TEST 2 PASSED
+# 
+# === TEST 3: left motor positive command at lower battery ===
+#     scale_factor=07fc lft_prod=1fe804 rght_prod=000000 lft_scaled=3fd rght_scaled=000 lft_final=bfd rght_final=800
+# [204865] lftPWM1 high count=3078 rghtPWM1 high count=2004
+# TEST 3 PASSED
+# 
+# === TEST 4: right motor inverted behavior ===
+#     scale_factor=0868 lft_prod=000000 rght_prod=64e000 lft_scaled=000 rght_scaled=7ff lft_final=800 rght_final=001
+# [245835] lftPWM1 high count=2004 rghtPWM1 high count=0
+# TEST 4 PASSED
+# 
+# === TEST 5: both motors driven together ===
+#     scale_factor=06db lft_prod=0db600 rght_prod=5ffa00 lft_scaled=1b6 rght_scaled=7ff lft_final=9b6 rght_final=001
+# [286805] lftPWM1 high count=2503 rghtPWM1 high count=0
+# TEST 5 PASSED
+# 
+# All MtrDrv tests passed.
+# 
+# ** Note: $stop    : C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv(185)
+#    Time: 286805 ps  Iteration: 1  Instance: /MtrDrv_tb
+# Break in Module MtrDrv_tb at C:/Users/adams/School/ECE551/EX21/MtrDrv_tb.sv line 185
+# End time: 12:50:40 on Apr 17,2026, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 2
