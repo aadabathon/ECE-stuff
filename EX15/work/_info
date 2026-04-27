@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vSPI_iNEMO
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1773870833
+!i10b 1
+!s100 ?9oQDPgVGCeQZQ0]n7mLb1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ilc]XTE?O1EXRj;T8:H=^23
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/adams/School/ECE551/EX15
+w1773870176
+Z5 8C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv
+Z6 FC:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv
+!i122 20
+L0 3 223
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1773870833.000000
+Z9 !s107 C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv|
+!i113 1
+Z11 o-work work -sv
+Z12 tCvgOpt 0
+n@s@p@i_i@n@e@m@o
+vSPI_iNEMO1
+R0
+!s110 1773870027
+!i10b 1
+!s100 J>LV[WfcNQQOPSHMJLeJM3
+R2
+I<c6LX92DHklIJ:dXogkKd3
+R3
+S1
+R4
+w1773700257
+R5
+R6
+!i122 8
+L0 1 223
+R7
+r1
+!s85 0
+31
+!s108 1773870027.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@s@p@i_i@n@e@m@o1
+vSPI_main
+R0
+R1
+!i10b 1
+!s100 P`h:e4GlFFl648]L2C][g2
+R2
+I=UW8nNePb=9O`m7nIQi4;2
+R3
+S1
+R4
+w1773870651
+8C:/Users/adams/School/ECE551/EX15/SPI_main.sv
+FC:/Users/adams/School/ECE551/EX15/SPI_main.sv
+!i122 18
+L0 3 167
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/EX15/SPI_main.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX15/SPI_main.sv|
+!i113 1
+R11
+R12
+n@s@p@i_main
+vSPI_main_tb
+R0
+R1
+!i10b 1
+!s100 0d<hhFh0>26Dd5jh?K6?02
+R2
+IIHZ]>;RMmPZENki`KPTIW0
+R3
+S1
+R4
+w1773870829
+8C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv
+FC:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv
+!i122 19
+L0 3 139
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv|
+!i113 1
+R11
+R12
+n@s@p@i_main_tb

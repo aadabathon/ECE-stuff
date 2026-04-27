@@ -1,0 +1,168 @@
+# Compile of SPI_iNEMO1.sv was successful.
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.SPI_main_tb
+# vsim -gui work.SPI_main_tb 
+# Start time: 16:38:39 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# ** Error: (vsim-3033) Instantiation of 'SPI_NEMO' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+#         Searched libraries:
+#             C:/Users/adams/School/ECE551/EX15/work
+# Error loading design
+# End time: 16:38:40 on Mar 18,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+vsim -gui work.SPI_main_tb
+# vsim -gui work.SPI_main_tb 
+# Start time: 16:38:55 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# ** Error: (vsim-3033) Instantiation of 'SPI_NEMO' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+#         Searched libraries:
+#             C:/Users/adams/School/ECE551/EX15/work
+# Error loading design
+# End time: 16:38:55 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# Compile of SPI_iNEMO.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.SPI_main_tb
+# vsim -gui work.SPI_main_tb 
+# Start time: 16:40:00 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# ** Error: (vsim-3033) Instantiation of 'SPI_NEMO' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+#         Searched libraries:
+#             C:/Users/adams/School/ECE551/EX15/work
+# Error loading design
+# End time: 16:40:00 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# Compile of SPI_iNEMO.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.SPI_main_tb
+# vsim -gui work.SPI_main_tb 
+# Start time: 16:40:32 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# ** Error: (vsim-3033) Instantiation of 'SPI_iNEMO' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+#         Searched libraries:
+#             C:/Users/adams/School/ECE551/EX15/work
+# Error loading design
+# End time: 16:40:32 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Load canceled
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# Compile of SPI_iNEMO.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.SPI_main_tb
+# vsim -gui work.SPI_main_tb 
+# Start time: 16:41:05 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# Loading work.SPI_iNEMO
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'SPI_iNEMO' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv
+# Error loading design
+# End time: 16:41:06 on Mar 18,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# Compile of SPI_iNEMO.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.SPI_main_tb
+# vsim -gui work.SPI_main_tb 
+# Start time: 16:43:05 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# Loading work.SPI_iNEMO
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'rst_n' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+# Error loading design
+# End time: 16:43:06 on Mar 18,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 2
+vsim stratixiv.stratixiv_and2
+# vsim stratixiv.stratixiv_and2 
+# Start time: 16:50:20 on Mar 18,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading stratixiv.stratixiv_atom_pack(body)
+# Loading stratixiv.stratixiv_and2(altvital)
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# Compile of SPI_iNEMO.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.SPI_main_tb
+# End time: 16:51:10 on Mar 18,2026, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 3
+# vsim work.SPI_main_tb 
+# Start time: 16:51:10 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# Loading work.SPI_iNEMO
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'rst_n' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+# Error loading design
+# End time: 16:51:10 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+vsim work.SPI_main_tb
+# vsim work.SPI_main_tb 
+# Start time: 16:51:21 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# Loading work.SPI_iNEMO
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'rst_n' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/iNEMO File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 30
+# Error loading design
+# End time: 16:51:21 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# Compile of SPI_main.sv was successful.
+# Compile of SPI_main_tb.sv was successful.
+# Compile of SPI_iNEMO.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.SPI_main_tb
+# vsim work.SPI_main_tb 
+# Start time: 16:53:57 on Mar 18,2026
+# Loading sv_std.std
+# Loading work.SPI_main_tb
+# Loading work.SPI_main
+# Loading work.SPI_iNEMO
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "inert_data.hex" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv(193)
+#    Time: 0 ps  Iteration: 0  Instance: /SPI_main_tb/nemo
+# Starting SPI_main testbench...
+# FAIL:                    WHO_AM_I read  got=Zzzz exp_low=6a  time=9940000
+# ** Fatal: Assertion error.
+#    Time: 9940 ns  Scope: SPI_main_tb.check_low_byte File: C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv Line: 89
+# ** Note: $finish    : C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv(89)
+#    Time: 9940 ns  Iteration: 1  Instance: /SPI_main_tb
+# 1
+# Break in Task check_low_byte at C:/Users/adams/School/ECE551/EX15/SPI_main_tb.sv line 89
+# End time: 16:54:16 on Mar 18,2026, Elapsed time: 0:00:19
+# Errors: 1, Warnings: 3

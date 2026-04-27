@@ -1,33 +1,23 @@
+# Compile of piezo_drv.sv was successful.
+# Compile of piezo_drv_dep.sv was successful.
 # Compile of piezo_drv_tb.sv was successful.
 # Compile of piezo_drv_test.sv was successful.
 # Compile of reset_synch.sv was successful.
-# Compile of piezo_drv.sv was successful.
-# 4 compiles, 0 failed with no errors.
+# 5 compiles, 0 failed with no errors.
 vsim -gui work.piezo_drv_tb
 # vsim -gui work.piezo_drv_tb 
-# Start time: 11:20:15 on Apr 08,2026
+# Start time: 19:27:12 on Apr 19,2026
 # Loading sv_std.std
 # Loading work.piezo_drv_tb
 # Loading work.piezo_drv
-add wave -position insertpoint sim:/piezo_drv_tb/*
 run -all
-# PASS: piezo_drv_tb completed successfully
-# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX19/piezo_drv_tb.sv(102)
-#    Time: 91600470 ns  Iteration: 1  Instance: /piezo_drv_tb
+# FAIL: fanfare did not oscillate at time 1240251000
+# ** Fatal: Assertion error.
+#    Time: 1240251 ns  Scope: piezo_drv_tb.fail File: C:/Users/adams/School/ECE551/EX19/piezo_drv_tb.sv Line: 49
+# ** Note: $finish    : C:/Users/adams/School/ECE551/EX19/piezo_drv_tb.sv(49)
+#    Time: 1240251 ns  Iteration: 0  Instance: /piezo_drv_tb
 # 1
-# Break in Module piezo_drv_tb at C:/Users/adams/ECE551-stuff/EX19/piezo_drv_tb.sv line 102
+# Break in Task fail at C:/Users/adams/School/ECE551/EX19/piezo_drv_tb.sv line 49
 quit -sim
-# End time: 11:23:31 on Apr 08,2026, Elapsed time: 0:03:16
-# Errors: 0, Warnings: 6
-vsim work.piezo_drv_tb
-# vsim work.piezo_drv_tb 
-# Start time: 11:23:57 on Apr 08,2026
-# Loading sv_std.std
-# Loading work.piezo_drv_tb
-# Loading work.piezo_drv
-run -all
-# PASS: piezo_drv_tb completed successfully
-# ** Note: $finish    : C:/Users/adams/ECE551-stuff/EX19/piezo_drv_tb.sv(102)
-#    Time: 91600470 ns  Iteration: 1  Instance: /piezo_drv_tb
-# End time: 11:26:50 on Apr 08,2026, Elapsed time: 0:02:53
-# Errors: 0, Warnings: 0
+# End time: 19:27:38 on Apr 19,2026, Elapsed time: 0:00:26
+# Errors: 1, Warnings: 2
