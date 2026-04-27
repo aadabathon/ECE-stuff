@@ -1,22 +1,36 @@
-C:/Users/adams/ECE551-stuff/EX19/piezo_drv_test.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX19/piezo_drv_test.sv
+C:/Users/adams/School/ECE551/EX19/reset_synch.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/School/ECE551/EX19/reset_synch.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} C:/Users/adams/School/ECE551/EX19/piezo_drv_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/School/ECE551/EX19/piezo_drv_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module piezo_drv_tb
+
+Top level modules:
+	piezo_drv_tb
+
+} {} {}} C:/Users/adams/School/ECE551/EX19/piezo_drv_test.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/School/ECE551/EX19/piezo_drv_test.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module piezo_drv_test
 
 Top level modules:
 	piezo_drv_test
 
-} {} {}} C:/Users/adams/ECE551-stuff/EX19/piezo_drv.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX19/piezo_drv.sv
+} {} {}} C:/Users/adams/School/ECE551/EX19/piezo_drv_dep.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/School/ECE551/EX19/piezo_drv_dep.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module piezo_drv
 
 Top level modules:
 	piezo_drv
 
-} {} {}} C:/Users/adams/ECE551-stuff/EX19/reset_synch.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/ECE551-stuff/EX19/reset_synch.sv
+} {} {}} C:/Users/adams/School/ECE551/EX19/piezo_drv.sv {1 {vlog -work work -sv -stats=none C:/Users/adams/School/ECE551/EX19/piezo_drv.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module reset_synch
+-- Compiling module piezo_drv
 
 Top level modules:
-	reset_synch
+	piezo_drv
 
 } {} {}}

@@ -1,0 +1,104 @@
+#============================================================
+# PID.dc
+#
+# Synopsys Design Compiler synthesis script for PID.sv
+#
+# Top-level design: PID
+#
+# This script:
+#   1. Reads in the RTL
+#   2. Selects and links the top-level design
+#   3. Applies timing/environment constraints
+#   4. Applies the required wire load model
+#   5. Compiles the design
+#   6. Flattens hierarchy and recompiles
+#   7. Generates timing, area, and gate-level netlist outputs
+#============================================================
+
+#------------------------------------------------------------
+# Read in the SystemVerilog source file
+#------------------------------------------------------------
+read_file -format sverilog {PID.sv}
+
+#------------------------------------------------------------
+# Select the top-level module and resolve references
+#------------------------------------------------------------
+current_design PID
+link
+
+#------------------------------------------------------------
+# Create the clock constraint
+#
+# 10 ns clock period
+# Clock port name is "clk"
+#------------------------------------------------------------
+create_clock -name clk -period 10.0 [get_ports clk]
+
+#------------------------------------------------------------
+# Prevent optimization of the clock network
+#------------------------------------------------------------
+set_dont_touch_network [get_ports clk]
+
+#------------------------------------------------------------
+# Apply input delay constraint
+#
+# All inputs except clk are assumed to arrive 0.4 ns after
+# the active clock edge.
+#------------------------------------------------------------
+set_input_delay 0.4 -clock clk \
+    [remove_from_collection [all_inputs] [get_ports clk]]
+
+#------------------------------------------------------------
+# Model the driving strength of external inputs
+#
+# Use the same drive cell as before for all inputs except:
+#   - clk
+#   - rst_n
+#------------------------------------------------------------
+set_driving_cell -lib_cell NAND2X2_LVT \
+    [remove_from_collection \
+        [remove_from_collection [all_inputs] [get_ports clk]] \
+        [get_ports rst_n]]
+
+#------------------------------------------------------------
+# Apply output delay constraint
+#------------------------------------------------------------
+set_output_delay 0.4 -clock clk [all_outputs]
+
+#------------------------------------------------------------
+# Apply output capacitive loading
+#------------------------------------------------------------
+set_load 0.10 [all_outputs]
+
+#------------------------------------------------------------
+# Limit transition time
+#------------------------------------------------------------
+set_max_transition 0.15 [current_design]
+
+#------------------------------------------------------------
+# Apply required wire load model
+#------------------------------------------------------------
+set_wire_load_model -name 16000
+
+#------------------------------------------------------------
+# First synthesis pass
+#------------------------------------------------------------
+compile -map_effort medium
+
+#------------------------------------------------------------
+# Flatten hierarchy and recompile
+#------------------------------------------------------------
+ungroup -all -flatten
+compile -map_effort medium
+
+#------------------------------------------------------------
+# Generate reports
+#------------------------------------------------------------
+report_timing -delay_type min > PID_min_delay.txt
+report_timing -delay_type max > PID_max_delay.txt
+report_area > PID_area.txt
+
+#------------------------------------------------------------
+# Write synthesized gate-level netlist
+#------------------------------------------------------------
+write -format verilog -output PID.vg

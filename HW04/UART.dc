@@ -1,0 +1,124 @@
+#============================================================
+# UART.dc
+#
+# Synopsys Design Compiler synthesis script for UART.sv
+#
+# Top-level design: UART
+# Source files:
+#   - UART_tx.sv
+#   - UART_rx.sv
+#   - UART.sv
+#
+# This script:
+#   1. Reads in the RTL
+#   2. Selects and links the top-level design
+#   3. Applies timing/environment constraints
+#   4. Applies the required wire load model
+#   5. Compiles the design
+#   6. Flattens hierarchy and recompiles
+#   7. Generates timing, area, and gate-level netlist outputs
+#============================================================
+
+#------------------------------------------------------------
+# Read in the SystemVerilog source files
+#------------------------------------------------------------
+read_file -format sverilog {UART_tx.sv UART_rx.sv UART.sv}
+
+#------------------------------------------------------------
+# Select the top-level module and resolve references
+#------------------------------------------------------------
+current_design UART
+link
+
+#------------------------------------------------------------
+# Create the clock constraint
+#
+# 500 MHz clock -> period = 2.0 ns
+# Clock port name is "clk"
+#------------------------------------------------------------
+create_clock -name clk -period 2.0 [get_ports clk]
+
+#------------------------------------------------------------
+# Prevent optimization of the clock network
+#------------------------------------------------------------
+set_dont_touch_network [get_ports clk]
+
+#------------------------------------------------------------
+# Apply input delay constraint
+#
+# All inputs except clk are assumed to arrive 0.4 ns after
+# the active clock edge.
+#------------------------------------------------------------
+set_input_delay 0.4 -clock clk \
+    [remove_from_collection [all_inputs] [get_ports clk]]
+
+#------------------------------------------------------------
+# Model the driving strength of external inputs
+#
+# Use the drive strength of a 2-input NAND gate of size 2
+# from the 32 nm library for all inputs except:
+#   - clk
+#   - rst_n
+#------------------------------------------------------------
+set_driving_cell -lib_cell NAND2X2_LVT \
+    [remove_from_collection \
+        [remove_from_collection [all_inputs] [get_ports clk]] \
+        [get_ports rst_n]]
+
+#------------------------------------------------------------
+# Apply output delay constraint
+#
+# All outputs must meet a 0.4 ns external timing budget.
+#------------------------------------------------------------
+set_output_delay 0.4 -clock clk [all_outputs]
+
+#------------------------------------------------------------
+# Apply output capacitive loading
+#
+# Each output drives a load of 0.10 pF.
+#------------------------------------------------------------
+set_load 0.10 [all_outputs]
+
+#------------------------------------------------------------
+# Limit transition time (slew) across the design
+#------------------------------------------------------------
+set_max_transition 0.15 [current_design]
+
+#------------------------------------------------------------
+# Apply the required wire load model
+#
+# Use the Synopsys 32 nm wire load model corresponding to
+# a block size of 16000 square microns.
+#------------------------------------------------------------
+set_wire_load_model -name 16000
+
+#------------------------------------------------------------
+# First synthesis pass
+#------------------------------------------------------------
+compile -map_effort medium
+
+#------------------------------------------------------------
+# Flatten the design hierarchy, then recompile
+#
+# This gives a fully flattened final implementation.
+#------------------------------------------------------------
+ungroup -all -flatten
+compile -map_effort medium
+
+#------------------------------------------------------------
+# Generate reports
+#
+# Min delay  -> hold-style timing information
+# Max delay  -> setup-style timing information
+# Area       -> cell area / total area summary
+#------------------------------------------------------------
+report_timing -delay_type min > UART_min_delay.txt
+report_timing -delay_type max > UART_max_delay.txt
+report_area > UART_area.txt
+
+#------------------------------------------------------------
+# Write out synthesized gate-level Verilog netlist
+#
+# This is the UART.vg file requested in the assignment.
+#------------------------------------------------------------
+write -format verilog -output UART.vg

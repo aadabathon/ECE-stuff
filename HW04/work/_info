@@ -1,0 +1,245 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vCommTB
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1774499452
+!i10b 1
+!s100 TKiX[NZSAh>]L79_EH]F[2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOaC?F?HC]znDXn:X=0JlE1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/adams/School/ECE551/HW04
+w1774499221
+8C:/Users/adams/School/ECE551/HW04/CommTB.sv
+FC:/Users/adams/School/ECE551/HW04/CommTB.sv
+!i122 225
+L0 1 327
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1774499451.000000
+!s107 C:/Users/adams/School/ECE551/HW04/CommTB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/HW04/CommTB.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+n@comm@t@b
+vRemoteComm
+R0
+R1
+!i10b 1
+!s100 MhI;lMGOiCD0ZR6;VG>k21
+R2
+IM_o:TCaUWn?>48K]B[Bc72
+R3
+S1
+R4
+w1773361676
+8C:/Users/adams/School/ECE551/HW04/RemoteComm.sv
+FC:/Users/adams/School/ECE551/HW04/RemoteComm.sv
+!i122 226
+L0 1 149
+R5
+r1
+!s85 0
+31
+Z8 !s108 1774499452.000000
+!s107 C:/Users/adams/School/ECE551/HW04/RemoteComm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/HW04/RemoteComm.sv|
+!i113 1
+R6
+R7
+n@remote@comm
+vSPI_iNEMO
+R0
+R1
+!i10b 1
+!s100 ?9oQDPgVGCeQZQ0]n7mLb1
+R2
+Ilc]XTE?O1EXRj;T8:H=^23
+R3
+S1
+R4
+w1774493563
+8C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv
+FC:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv
+!i122 233
+L0 3 223
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX15/SPI_iNEMO.sv|
+!i113 1
+R6
+R7
+n@s@p@i_i@n@e@m@o
+vSPI_main
+R0
+R1
+!i10b 1
+!s100 M=Rmh9Ni;dU@CHX;TV]WX3
+R2
+IC8ajIY8ILBZEWQbg63PJa3
+R3
+S1
+R4
+w1774496503
+8C:/Users/adams/School/ECE551/HW04/SPI_main.sv
+FC:/Users/adams/School/ECE551/HW04/SPI_main.sv
+!i122 227
+L0 3 258
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/HW04/SPI_main.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/HW04/SPI_main.sv|
+!i113 1
+R6
+R7
+n@s@p@i_main
+vSPI_main_tb
+R0
+R1
+!i10b 1
+!s100 0OLbV_6OaTWMe`[4kTjT00
+R2
+I@S1dlb@<0Y=CZV_Bb0MTn1
+R3
+S1
+R4
+w1774496527
+8C:/Users/adams/School/ECE551/HW04/SPI_main_tb.sv
+FC:/Users/adams/School/ECE551/HW04/SPI_main_tb.sv
+!i122 228
+L0 3 213
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/HW04/SPI_main_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/HW04/SPI_main_tb.sv|
+!i113 1
+R6
+R7
+n@s@p@i_main_tb
+vUART
+R0
+R1
+!i10b 1
+!s100 1c7jdaCh948Z2HJGWz_II2
+R2
+IA`kGnRDgePkcMAc^z`Mlz1
+R3
+S1
+R4
+w1773348692
+8C:/Users/adams/School/ECE551/EX14/UART.sv
+FC:/Users/adams/School/ECE551/EX14/UART.sv
+!i122 230
+L0 1 24
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/EX14/UART.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX14/UART.sv|
+!i113 1
+R6
+R7
+n@u@a@r@t
+vUART_rx
+R0
+R1
+!i10b 1
+!s100 3A[m_U02kjJAZMEO:fTbW3
+R2
+IjVKo4aid_oj9S858fOEdG1
+R3
+S1
+R4
+w1772513453
+8C:/Users/adams/School/ECE551/EX14/UART_rx.sv
+FC:/Users/adams/School/ECE551/EX14/UART_rx.sv
+!i122 231
+L0 1 208
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/EX14/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX14/UART_rx.sv|
+!i113 1
+R6
+R7
+n@u@a@r@t_rx
+vUART_tx
+R0
+R1
+!i10b 1
+!s100 cZi<bFK_NEGGFF]3XdI5<3
+R2
+Ik@QJR4G;ZE8MWh5[D?fUk0
+R3
+S1
+R4
+w1772513252
+8C:/Users/adams/School/ECE551/EX14/UART_tx.sv
+FC:/Users/adams/School/ECE551/EX14/UART_tx.sv
+!i122 232
+L0 1 170
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/EX14/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/EX14/UART_tx.sv|
+!i113 1
+R6
+R7
+n@u@a@r@t_tx
+vUART_wrapper
+R0
+R1
+!i10b 1
+!s100 E:lTn?NZ1SPnZf6M:oe@X3
+R2
+ISQX1A<_BTYF5@AB4EOcJf2
+R3
+S1
+R4
+w1773359834
+8C:/Users/adams/School/ECE551/HW04/UART_wrapper.sv
+FC:/Users/adams/School/ECE551/HW04/UART_wrapper.sv
+!i122 229
+L0 1 124
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/adams/School/ECE551/HW04/UART_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/adams/School/ECE551/HW04/UART_wrapper.sv|
+!i113 1
+R6
+R7
+n@u@a@r@t_wrapper
