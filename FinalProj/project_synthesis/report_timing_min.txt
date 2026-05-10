@@ -1,0 +1,50 @@
+Warning: Design 'MazeRunner' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : MazeRunner
+Version: X-2025.06
+Date   : Mon Apr 27 16:41:46 2026
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32lvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: iNEMO/iINT/yaw_comp_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iNEMO/iINT/yaw_scaled_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MazeRunner         16000                 saed32lvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iNEMO/iINT/yaw_comp_reg[18]/CLK (DFFX1_LVT)             0.00       0.00 r
+  iNEMO/iINT/yaw_comp_reg[18]/Q (DFFX1_LVT)               0.08       0.08 f
+  iNEMO/iINT/U26/Y (AO22X1_LVT)                           0.04       0.11 f
+  iNEMO/iINT/yaw_scaled_reg[18]/D (DFFX2_LVT)             0.01       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.12       0.12
+  iNEMO/iINT/yaw_scaled_reg[18]/CLK (DFFX2_LVT)           0.00       0.12 r
+  library hold time                                       0.00       0.12
+  data required time                                                 0.12
+  --------------------------------------------------------------------------
+  data required time                                                 0.12
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,89 @@
+Warning: Design 'MazeRunner' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MazeRunner
+Version: X-2025.06
+Date   : Mon Apr 27 16:41:46 2026
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32lvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rght_spd_piped_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iMTR/rPWM/PWM2_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MazeRunner         16000                 saed32lvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rght_spd_piped_reg[0]/CLK (DFFARX1_LVT)                 0.00       0.00 r
+  rght_spd_piped_reg[0]/Q (DFFARX1_LVT)                   0.10       0.10 r
+  iMTR/mult_29/U147/Y (NAND2X0_LVT)                       0.04       0.13 f
+  iMTR/mult_29/U148/Y (XOR2X2_LVT)                        0.09       0.22 r
+  U393/Y (AO22X1_LVT)                                     0.05       0.27 r
+  iMTR/mult_29/U5/Y (XOR2X2_LVT)                          0.08       0.35 f
+  iMTR/mult_29/U69/Y (MUX21X2_LVT)                        0.06       0.41 f
+  iMTR/mult_29/U59/Y (NAND2X0_LVT)                        0.04       0.45 r
+  iMTR/mult_29/U57/Y (NAND3X0_LVT)                        0.05       0.50 f
+  iMTR/mult_29/S2_5_8/S (FADDX1_LVT)                      0.13       0.63 r
+  iMTR/mult_29/S2_6_7/S (FADDX1_LVT)                      0.11       0.73 f
+  iMTR/mult_29/S2_7_6/S (FADDX1_LVT)                      0.11       0.85 r
+  iMTR/mult_29/S2_8_5/S (FADDX1_LVT)                      0.11       0.96 f
+  iMTR/mult_29/S2_9_4/S (FADDX1_LVT)                      0.11       1.07 r
+  iMTR/mult_29/S2_10_3/S (FADDX1_LVT)                     0.11       1.18 f
+  iMTR/mult_29/S4_2/CO (FADDX1_LVT)                       0.09       1.27 f
+  U131/Y (XOR2X1_LVT)                                     0.09       1.37 r
+  iMTR/mult_29/FS_1/U28/Y (OR2X2_LVT)                     0.05       1.41 r
+  U448/Y (AND2X1_LVT)                                     0.04       1.46 r
+  U431/Y (NAND3X0_LVT)                                    0.03       1.49 f
+  U452/Y (NAND3X0_LVT)                                    0.04       1.53 r
+  U453/Y (NAND2X0_LVT)                                    0.03       1.56 f
+  U455/Y (AND3X1_LVT)                                     0.06       1.61 f
+  U72/Y (XOR2X1_LVT)                                      0.08       1.69 r
+  U309/Y (MUX21X1_LVT)                                    0.06       1.75 r
+  iMTR/U74/Y (OR2X2_LVT)                                  0.05       1.80 r
+  U96/Y (AOI21X1_LVT)                                     0.07       1.86 f
+  U425/Y (AND4X1_LVT)                                     0.07       1.94 f
+  U418/Y (AND2X1_LVT)                                     0.05       1.99 f
+  iMTR/U81/Y (AND2X1_LVT)                                 0.04       2.03 f
+  U383/Y (AND2X1_LVT)                                     0.05       2.08 f
+  U380/Y (XOR2X1_LVT)                                     0.08       2.16 r
+  U382/Y (NAND3X0_LVT)                                    0.04       2.20 f
+  U413/Y (OR2X2_LVT)                                      0.05       2.25 f
+  U75/Y (OR2X2_LVT)                                       0.05       2.30 f
+  U359/Y (NAND2X0_LVT)                                    0.03       2.33 r
+  iMTR/rPWM/U33/Y (AOI22X1_LVT)                           0.05       2.39 f
+  iMTR/rPWM/U67/Y (AO22X1_LVT)                            0.04       2.43 f
+  iMTR/rPWM/U69/Y (NAND2X0_LVT)                           0.03       2.46 r
+  iMTR/rPWM/U49/Y (OA221X1_LVT)                           0.05       2.51 r
+  iMTR/rPWM/U84/Y (OA21X1_LVT)                            0.05       2.55 r
+  iMTR/rPWM/U94/Y (OA22X1_LVT)                            0.04       2.60 r
+  iMTR/rPWM/PWM2_reg/D (DFFARX1_LVT)                      0.01       2.61 r
+  data arrival time                                                  2.61
+
+  clock clk (rise edge)                                   2.75       2.75
+  clock network delay (ideal)                             0.00       2.75
+  clock uncertainty                                      -0.12       2.62
+  iMTR/rPWM/PWM2_reg/CLK (DFFARX1_LVT)                    0.00       2.62 r
+  library setup time                                     -0.03       2.60
+  data required time                                                 2.60
+  --------------------------------------------------------------------------
+  data required time                                                 2.60
+  data arrival time                                                 -2.61
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+1

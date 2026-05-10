@@ -1,0 +1,159 @@
+Warning: Design 'MazeRunner' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     X-2025.06
+Date:        Mon Apr 27 16:40:33 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     30
+    Multiply driven inputs (LINT-6)                                 3
+    Unconnected ports (LINT-28)                                     7
+    Shorted outputs (LINT-31)                                      13
+    Constant outputs (LINT-52)                                      7
+
+Cells                                                              59
+    Cells do not drive (LINT-1)                                    32
+    Connected to power or ground (LINT-32)                         22
+    Nets connected to multiple pins on same cell (LINT-33)          5
+
+Nets                                                                9
+    Unloaded nets (LINT-2)                                          9
+
+Tristate                                                            5
+    A tristate bus has a non tri-state driver (LINT-34)             5
+--------------------------------------------------------------------------------
+
+Warning: In design 'navigate_FAST_SIM1', cell 'C354' does not drive any nets. (LINT-1)
+Warning: In design 'navigate_FAST_SIM1', cell 'C358' does not drive any nets. (LINT-1)
+Warning: In design 'navigate_FAST_SIM1', cell 'C362' does not drive any nets. (LINT-1)
+Warning: In design 'navigate_FAST_SIM1', cell 'C368' does not drive any nets. (LINT-1)
+Warning: In design 'inert_intf_FAST_SIM1', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'IR_math_900', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'IR_math_900', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'IR_math_900', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'sensor_intf_1_900', cell 'B_24' does not drive any nets. (LINT-1)
+Warning: In design 'sensor_intf_1_900', cell 'C1327' does not drive any nets. (LINT-1)
+Warning: In design 'sensor_intf_1_900', cell 'C1332' does not drive any nets. (LINT-1)
+Warning: In design 'sensor_intf_1_900', cell 'C1440' does not drive any nets. (LINT-1)
+Warning: In design 'sensor_intf_1_900', cell 'C1448' does not drive any nets. (LINT-1)
+Warning: In design 'sensor_intf_1_900', cell 'C1456' does not drive any nets. (LINT-1)
+Warning: In design 'piezo_drv_FAST_SIM1', cell 'C621' does not drive any nets. (LINT-1)
+Warning: In design 'piezo_drv_FAST_SIM1', cell 'C627' does not drive any nets. (LINT-1)
+Warning: In design 'piezo_drv_FAST_SIM1', cell 'C628' does not drive any nets. (LINT-1)
+Warning: In design 'piezo_drv_FAST_SIM1', cell 'C632' does not drive any nets. (LINT-1)
+Warning: In design 'piezo_drv_FAST_SIM1', cell 'C639' does not drive any nets. (LINT-1)
+Warning: In design 'piezo_drv_FAST_SIM1', cell 'C640' does not drive any nets. (LINT-1)
+Warning: In design 'UART_rx', cell 'C275' does not drive any nets. (LINT-1)
+Warning: In design 'UART_rx', cell 'C284' does not drive any nets. (LINT-1)
+Warning: In design 'UART_tx', cell 'C265' does not drive any nets. (LINT-1)
+Warning: In design 'UART_tx', cell 'C273' does not drive any nets. (LINT-1)
+Warning: In design 'SPI_main', cell 'C349' does not drive any nets. (LINT-1)
+Warning: In design 'SPI_main', cell 'C354' does not drive any nets. (LINT-1)
+Warning: In design 'inertial_integrator_FAST_SIM1', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'inertial_integrator_FAST_SIM1', cell 'C498' does not drive any nets. (LINT-1)
+Warning: In design 'inertial_integrator_FAST_SIM1', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'inertial_integrator_FAST_SIM1', cell 'C514' does not drive any nets. (LINT-1)
+Warning: In design 'PWM12', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'PWM8', cell 'B_1' does not drive any nets. (LINT-1)
+Warning: In design 'MazeRunner', net 'resp_sent' driven by pin 'iWRAP/tx_done' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[15]' driven by pin 'iNEMO/iSPI/rd_data[15]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[8]' driven by pin 'iNEMO/iSPI/rd_data[8]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[9]' driven by pin 'iNEMO/iSPI/rd_data[9]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[10]' driven by pin 'iNEMO/iSPI/rd_data[10]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[11]' driven by pin 'iNEMO/iSPI/rd_data[11]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[12]' driven by pin 'iNEMO/iSPI/rd_data[12]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[13]' driven by pin 'iNEMO/iSPI/rd_data[13]' has no loads. (LINT-2)
+Warning: In design 'MazeRunner', net 'iNEMO/inert_data[14]' driven by pin 'iNEMO/iSPI/rd_data[14]' has no loads. (LINT-2)
+Warning: In design 'sensor_intf_1_900', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'sensor_intf_1_900', input port 'rst_n' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'sensor_intf_1_900', input port 'A2D_MISO' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'cmd_proc', port 'cmd[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'MtrDrv', port 'vbatt[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'MtrDrv', port 'vbatt[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'MtrDrv', port 'vbatt[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'MtrDrv', port 'vbatt[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'MtrDrv', port 'vbatt[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'MtrDrv', port 'vbatt[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to output port 'LED[1]'. (LINT-31)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to output port 'LED[2]'. (LINT-31)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to output port 'LED[3]'. (LINT-31)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to output port 'LED[4]'. (LINT-31)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to output port 'LED[5]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[11]' is connected directly to output port 'LED[6]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[10]' is connected directly to output port 'LED[5]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[9]' is connected directly to output port 'LED[4]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[8]' is connected directly to output port 'LED[3]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[7]' is connected directly to output port 'LED[2]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[6]' is connected directly to output port 'LED[1]'. (LINT-31)
+Warning: In design 'sensor_intf_1_900', output port 'vbatt[5]' is connected directly to output port 'LED[0]'. (LINT-31)
+Warning: In design 'SPI_main', output port 'MOSI' is connected directly to output port 'rd_data[15]'. (LINT-31)
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[7]' is connected to logic 1. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[6]' is connected to logic 0. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[5]' is connected to logic 1. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[4]' is connected to logic 0. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[3]' is connected to logic 0. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[2]' is connected to logic 1. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[1]' is connected to logic 0. 
+Warning: In design 'MazeRunner', a pin on submodule 'iWRAP' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'resp[0]' is connected to logic 1. 
+Warning: In design 'inert_intf_FAST_SIM1', a pin on submodule 'iSPI' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'wt_data[14]' is connected to logic 0. 
+Warning: In design 'inert_intf_FAST_SIM1', a pin on submodule 'iSPI' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'wt_data[7]' is connected to logic 0. 
+Warning: In design 'inert_intf_FAST_SIM1', a pin on submodule 'iSPI' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'wt_data[4]' is connected to logic 0. 
+Warning: In design 'inert_intf_FAST_SIM1', a pin on submodule 'iSPI' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'wt_data[3]' is connected to logic 0. 
+Warning: In design 'inert_intf_FAST_SIM1', a pin on submodule 'iSPI' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'wt_data[2]' is connected to logic 0. 
+Warning: In design 'inert_intf_FAST_SIM1', a pin on submodule 'iSPI' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'wt_data[0]' is connected to logic 0. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[7]' is connected to logic 1. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[6]' is connected to logic 1. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[5]' is connected to logic 0. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[4]' is connected to logic 0. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[3]' is connected to logic 0. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[2]' is connected to logic 0. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[1]' is connected to logic 0. 
+Warning: In design 'sensor_intf_1_900', a pin on submodule 'iDRV' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'duty[0]' is connected to logic 0. 
+Warning: In design 'MazeRunner', the same net is connected to more than one pin on submodule 'iWRAP'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'resp[7]', 'resp[5]'', 'resp[2]', 'resp[0]'.
+Warning: In design 'MazeRunner', the same net is connected to more than one pin on submodule 'iWRAP'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'resp[6]', 'resp[4]'', 'resp[3]', 'resp[1]'.
+Warning: In design 'inert_intf_FAST_SIM1', the same net is connected to more than one pin on submodule 'iSPI'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'wt_data[14]', 'wt_data[7]'', 'wt_data[4]', 'wt_data[3]', 'wt_data[2]', 'wt_data[0]'.
+Warning: In design 'sensor_intf_1_900', the same net is connected to more than one pin on submodule 'iDRV'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'duty[7]', 'duty[6]''.
+Warning: In design 'sensor_intf_1_900', the same net is connected to more than one pin on submodule 'iDRV'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'duty[5]', 'duty[4]'', 'duty[3]', 'duty[2]', 'duty[1]', 'duty[0]'.
+Warning: In design 'MazeRunner', three-state bus 'rst_n' has non three-state driver 'iRST/rst_ff2_reg/Q'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/chnnl[0]' has non three-state driver 'iIR/C1281/Z_0'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/chnnl[1]' has non three-state driver 'iIR/C1281/Z_1'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/chnnl[2]' has non three-state driver 'iIR/C1281/Z_2'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/strt_cnv' has non three-state driver 'iIR/C1282/Z_0'. (LINT-34)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'DutyScaleROM', output port 'scale[12]' is connected directly to 'logic 0'. (LINT-52)
+1

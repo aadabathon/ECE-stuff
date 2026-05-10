@@ -1,0 +1,176 @@
+# Compile of A2D_intf.sv was successful.
+# Compile of ADC128S_FC.sv was successful.
+# Compile of cmd_proc.sv was successful.
+# Compile of cmd_proc_tb.sv was successful.
+# Compile of Dterm.sv was successful.
+# Compile of DutyScaleROM.sv was successful.
+# Compile of I_term.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of inert_intf_tb.sv was successful.
+# Compile of inertial_integrator.sv was successful.
+# Compile of IR_Math.sv was successful.
+# Compile of IR_Math_tb.sv was successful.
+# Compile of maze_solve.sv failed with 16 errors.
+# Compile of MazeRunner.sv was successful.
+# Compile of MazeRunner_tb.sv was successful.
+# Compile of MtrDrv.sv was successful.
+# Compile of navigate.sv was successful.
+# Compile of navigate_tb_starter.sv was successful.
+# Compile of PID.sv was successful with warnings.
+# Compile of piezo_drv.sv was successful.
+# Compile of piezo_drv_tb.sv was successful.
+# Compile of PWM8.sv was successful.
+# Compile of PWM12.sv was successful.
+# Compile of reset_synch.sv was successful.
+# Compile of RunnerPhysics.sv was successful with warnings.
+# Compile of sensor_intf.sv was successful with warnings.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_iNEMO4.sv was successful.
+# Compile of SPI_main.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 32 compiles, 1 failed with 16 errors.
+# Compile of maze_solve.sv failed with 2 errors.
+# Compile of maze_solve.sv failed with 1 errors.
+# Compile of maze_solve.sv was successful with warnings.
+# Compile of maze_solve.sv was successful.
+vsim -gui work.MazeRunner_tb
+# vsim -gui work.MazeRunner_tb 
+# Start time: 12:48:18 on Apr 20,2026
+# Loading sv_std.std
+# Loading work.MazeRunner_tb
+# Loading work.MazeRunner
+# Loading work.reset_synch
+# Loading work.UART_wrapper
+# Loading work.UART_rx
+# Loading work.UART_tx
+# Loading work.cmd_proc
+# ** Error: (vsim-3033) Instantiation of 'maze_solve' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iDUT File: C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv Line: 84
+#         Searched libraries:
+#             C:/ECE 551/551_Project/ProjectDir/work
+# Loading work.navigate
+# Loading work.inert_intf
+# Loading work.SPI_main
+# Loading work.inertial_integrator
+# Loading work.IR_math
+# Loading work.PID
+# Loading work.I_term
+# Loading work.Dterm
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+# Loading work.sensor_intf
+# Loading work.A2D_intf
+# Loading work.PWM8
+# Loading work.piezo_drv
+# ** Error: (vsim-3033) Instantiation of 'RemoteComm' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb File: C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv Line: 40
+#         Searched libraries:
+#             C:/ECE 551/551_Project/ProjectDir/work
+# Loading work.RunnerPhysics
+# Loading work.SPI_iNEMO4
+# Loading work.inverse_PWM12e
+# Loading work.ADC128S_FC
+# Loading work.SPI_ADC128S
+# Error loading design
+# End time: 12:48:19 on Apr 20,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 9
+vsim -gui work.MazeRunner_tb
+# vsim -gui work.MazeRunner_tb 
+# Start time: 12:50:03 on Apr 20,2026
+# Loading sv_std.std
+# Loading work.MazeRunner_tb
+# Loading work.MazeRunner
+# Loading work.reset_synch
+# Loading work.UART_wrapper
+# Loading work.UART_rx
+# Loading work.UART_tx
+# Loading work.cmd_proc
+# ** Error: (vsim-3033) Instantiation of 'maze_solve' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iDUT File: C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv Line: 84
+#         Searched libraries:
+#             C:/ECE 551/551_Project/ProjectDir/work
+# Loading work.navigate
+# Loading work.inert_intf
+# Loading work.SPI_main
+# Loading work.inertial_integrator
+# Loading work.IR_math
+# Loading work.PID
+# Loading work.I_term
+# Loading work.Dterm
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+# Loading work.sensor_intf
+# Loading work.A2D_intf
+# Loading work.PWM8
+# Loading work.piezo_drv
+# ** Error: (vsim-3033) Instantiation of 'RemoteComm' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb File: C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv Line: 40
+#         Searched libraries:
+#             C:/ECE 551/551_Project/ProjectDir/work
+# Loading work.RunnerPhysics
+# Loading work.SPI_iNEMO4
+# Loading work.inverse_PWM12e
+# Loading work.ADC128S_FC
+# Loading work.SPI_ADC128S
+# Error loading design
+# End time: 12:50:04 on Apr 20,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 1
+# Compile of maze_solve.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.MazeRunner_tb
+# vsim -gui work.MazeRunner_tb 
+# Start time: 12:50:41 on Apr 20,2026
+# Loading sv_std.std
+# Loading work.MazeRunner_tb
+# Loading work.MazeRunner
+# Loading work.reset_synch
+# Loading work.UART_wrapper
+# Loading work.UART_rx
+# Loading work.UART_tx
+# Loading work.cmd_proc
+# Loading work.maze_solve
+# Loading work.navigate
+# Loading work.inert_intf
+# Loading work.SPI_main
+# Loading work.inertial_integrator
+# Loading work.IR_math
+# Loading work.PID
+# Loading work.I_term
+# Loading work.Dterm
+# Loading work.MtrDrv
+# Loading work.DutyScaleROM
+# Loading work.PWM12
+# Loading work.sensor_intf
+# Loading work.A2D_intf
+# Loading work.PWM8
+# Loading work.piezo_drv
+# Loading work.RemoteComm
+# Loading work.RunnerPhysics
+# Loading work.SPI_iNEMO4
+# Loading work.inverse_PWM12e
+# Loading work.ADC128S_FC
+# Loading work.SPI_ADC128S
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iDUT/iIR_adj File: C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv Line: 128
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (12) for port 'vbatt'. The port definition is at: C:/ECE 551/551_Project/ProjectDir/MtrDrv.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iDUT/iMTR File: C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv Line: 143
+# ** Error: (vsim-3063) Port 'rspns' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iDUT/iIR/iA2D/iSPI File: C:/ECE 551/551_Project/ProjectDir/A2D_intf.sv Line: 80
+# ** Error: (vsim-3063) Port 'cmd' not found in the connected module (10th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iDUT/iIR/iA2D/iSPI File: C:/ECE 551/551_Project/ProjectDir/A2D_intf.sv Line: 80
+# ** Error: (vsim-3063) Port 'RX' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iCMD File: C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv Line: 40
+# ** Error: (vsim-3063) Port 'TX' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iCMD File: C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv Line: 40
+# ** Error: (vsim-3063) Port 'send_cmd' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iCMD File: C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv Line: 40
+# ** Error: (vsim-3063) Port 'cmd_sent' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /MazeRunner_tb/iCMD File: C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv Line: 40
+# Error loading design
+# End time: 12:50:42 on Apr 20,2026, Elapsed time: 0:00:01
+# Errors: 7, Warnings: 4

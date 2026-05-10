@@ -1,0 +1,908 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vA2D_intf
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1776706836
+!i10b 1
+!s100 M?Ji4Z^>TeN1G:>mN77o81
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iflkk79?X>oD_DgZFfe3JG1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/ECE 551/551_Project/ProjectDir
+Z5 w1776705585
+8C:/ECE 551/551_Project/ProjectDir/A2D_intf.sv
+FC:/ECE 551/551_Project/ProjectDir/A2D_intf.sv
+!i122 0
+L0 1 85
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1776706835.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/A2D_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/A2D_intf.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@a2@d_intf
+vADC128S_FC
+R0
+R1
+!i10b 1
+!s100 RbWH89FETlJBko;>AX0NK1
+R2
+In58mid[Ph<2HP]hc_9HYS2
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/ADC128S_FC.sv
+FC:/ECE 551/551_Project/ProjectDir/ADC128S_FC.sv
+!i122 1
+L0 1 111
+R6
+r1
+!s85 0
+31
+Z9 !s108 1776706836.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/ADC128S_FC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/ADC128S_FC.sv|
+!i113 1
+R7
+R8
+n@a@d@c128@s_@f@c
+vcmd_proc
+R0
+R1
+!i10b 1
+!s100 UfzHkV_AWK4o`k6@JAocU0
+R2
+IP0e6]7IeabmX4RY[BUhY?1
+R3
+S1
+R4
+w1775667939
+8C:/ECE 551/551_Project/ProjectDir/cmd_proc.sv
+FC:/ECE 551/551_Project/ProjectDir/cmd_proc.sv
+!i122 2
+L0 1 116
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/ECE 551/551_Project/ProjectDir/cmd_proc.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/cmd_proc.sv|
+!i113 1
+R7
+R8
+vcmd_proc_tb
+R0
+R1
+!i10b 1
+!s100 ChQnJIe;ZomT7CR9YP5483
+R2
+ISX?F1IM8Nh`j?G=1helz^2
+R3
+S1
+R4
+w1775838389
+8C:/ECE 551/551_Project/ProjectDir/cmd_proc_tb.sv
+FC:/ECE 551/551_Project/ProjectDir/cmd_proc_tb.sv
+!i122 3
+L0 1 198
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/ECE 551/551_Project/ProjectDir/cmd_proc_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/cmd_proc_tb.sv|
+!i113 1
+R7
+R8
+vDterm
+R0
+R1
+!i10b 1
+!s100 cdOP]laK[^H^X=AW1lYX40
+R2
+IMSYRI=Q:<@USo2=PdO?V_3
+R3
+S1
+R4
+Z10 w1776706478
+8C:/ECE 551/551_Project/ProjectDir/Dterm.sv
+FC:/ECE 551/551_Project/ProjectDir/Dterm.sv
+!i122 4
+L0 1 54
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/ECE 551/551_Project/ProjectDir/Dterm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/Dterm.sv|
+!i113 1
+R7
+R8
+n@dterm
+vDutyScaleROM
+R0
+Z11 !s110 1776706837
+!i10b 1
+!s100 foSLQBIO7]1]76YnD^<P63
+R2
+IK2cUm=LjK]9:;0^C_E[Nh3
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/DutyScaleROM.sv
+FC:/ECE 551/551_Project/ProjectDir/DutyScaleROM.sv
+!i122 5
+L0 1 81
+R6
+r1
+!s85 0
+31
+Z12 !s108 1776706837.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/DutyScaleROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/DutyScaleROM.sv|
+!i113 1
+R7
+R8
+n@duty@scale@r@o@m
+vI_term
+R0
+R11
+!i10b 1
+!s100 f>jXblo74`QzWYW:z`^3d2
+R2
+ING<nC:LZWNDY_]kKlX=`n1
+R3
+S1
+R4
+R10
+8C:/ECE 551/551_Project/ProjectDir/I_term.sv
+FC:/ECE 551/551_Project/ProjectDir/I_term.sv
+!i122 6
+L0 1 41
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/ECE 551/551_Project/ProjectDir/I_term.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/I_term.sv|
+!i113 1
+R7
+R8
+n@i_term
+vinert_intf
+R0
+R11
+!i10b 1
+!s100 BIkoPNNZJ?Ob[DRQaMZ@`1
+R2
+I8H9H15YMI9DiMNPKn24Tc2
+R3
+S1
+R4
+w1776634198
+8C:/ECE 551/551_Project/ProjectDir/inert_intf.sv
+FC:/ECE 551/551_Project/ProjectDir/inert_intf.sv
+!i122 7
+L0 7 176
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/ECE 551/551_Project/ProjectDir/inert_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/inert_intf.sv|
+!i113 1
+R7
+R8
+vinert_intf_tb
+R0
+R11
+!i10b 1
+!s100 z9_mWe4i6@j9Ib]c:Rzch3
+R2
+IF5kf3L?PadGC9L_B@PCik0
+R3
+S1
+R4
+w1776635133
+8C:/ECE 551/551_Project/ProjectDir/inert_intf_tb.sv
+FC:/ECE 551/551_Project/ProjectDir/inert_intf_tb.sv
+!i122 8
+L0 1 127
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/ECE 551/551_Project/ProjectDir/inert_intf_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/inert_intf_tb.sv|
+!i113 1
+R7
+R8
+vinertial_integrator
+R0
+Z13 !s110 1776706838
+!i10b 1
+!s100 zFCz=?KO7bL<jUEdR_Y6D0
+R2
+IUOkA?9Qlf^4K0j]1PGKeM3
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/inertial_integrator.sv
+FC:/ECE 551/551_Project/ProjectDir/inertial_integrator.sv
+!i122 9
+L0 1 216
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/ECE 551/551_Project/ProjectDir/inertial_integrator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/inertial_integrator.sv|
+!i113 1
+R7
+R8
+vinverse_PWM12e
+R0
+Z14 !s110 1776706841
+!i10b 1
+!s100 P@Hfli=FeU]Fg6X2?8@G12
+R2
+IERLBe1mNj0h<2X@N]1eYW2
+R3
+S1
+R4
+R5
+Z15 8C:/ECE 551/551_Project/ProjectDir/RunnerPhysics.sv
+Z16 FC:/ECE 551/551_Project/ProjectDir/RunnerPhysics.sv
+!i122 23
+L0 364 49
+R6
+r1
+!s85 0
+31
+Z17 !s108 1776706841.000000
+Z18 !s107 C:/ECE 551/551_Project/ProjectDir/RunnerPhysics.sv|
+Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/RunnerPhysics.sv|
+!i113 1
+R7
+R8
+ninverse_@p@w@m12e
+vIR_math
+R0
+R13
+!i10b 1
+!s100 7e^ShYmIZBn<RoR6mz7=W3
+R2
+I;iWWkGBZk^9VP`l^i<cBV0
+R3
+S1
+R4
+Z20 w1776706694
+8C:/ECE 551/551_Project/ProjectDir/IR_Math.sv
+FC:/ECE 551/551_Project/ProjectDir/IR_Math.sv
+!i122 10
+L0 1 42
+R6
+r1
+!s85 0
+31
+Z21 !s108 1776706838.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/IR_Math.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/IR_Math.sv|
+!i113 1
+R7
+R8
+n@i@r_math
+vIR_Math_tb
+R0
+R13
+!i10b 1
+!s100 h@S^;cSoT4=<YJH:1cUJf2
+R2
+IamH8@LjE0FC5>gb`MODbl1
+R3
+S1
+R4
+R20
+8C:/ECE 551/551_Project/ProjectDir/IR_Math_tb.sv
+FC:/ECE 551/551_Project/ProjectDir/IR_Math_tb.sv
+!i122 11
+L0 1 130
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/ECE 551/551_Project/ProjectDir/IR_Math_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/IR_Math_tb.sv|
+!i113 1
+R7
+R8
+n@i@r_@math_tb
+vmaze_controller
+R0
+!s110 1776707271
+!i10b 1
+!s100 baEOj>7B3Gn_6360b8N7m0
+R2
+Inb=0UN2ZoM3MJ;>7@YVh43
+R3
+S1
+R4
+w1776707265
+Z22 8C:/ECE 551/551_Project/ProjectDir/maze_solve.sv
+Z23 FC:/ECE 551/551_Project/ProjectDir/maze_solve.sv
+!i122 32
+Z24 L0 1 129
+R6
+r1
+!s85 0
+31
+!s108 1776707271.000000
+Z25 !s107 C:/ECE 551/551_Project/ProjectDir/maze_solve.sv|
+Z26 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/maze_solve.sv|
+!i113 1
+R7
+R8
+vmaze_solve
+R0
+Z27 !s110 1776707432
+!i10b 1
+!s100 8[ORee=jl=[Z9_i3??36n3
+R2
+IcWU19PGh@=OC<;@Zon_5S0
+R3
+S1
+R4
+w1776707342
+R22
+R23
+!i122 33
+R24
+R6
+r1
+!s85 0
+31
+!s108 1776707431.000000
+R25
+R26
+!i113 1
+R7
+R8
+vMazeRunner
+R0
+R13
+!i10b 1
+!s100 NI;97XY>3zEA>190SGa3c2
+R2
+II7a=PLDSN9G?a<0aRTNJ53
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv
+FC:/ECE 551/551_Project/ProjectDir/MazeRunner.sv
+!i122 12
+L0 1 166
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/MazeRunner.sv|
+!i113 1
+R7
+R8
+n@maze@runner
+vMazeRunner_tb
+R0
+Z28 !s110 1776706839
+!i10b 1
+!s100 ?jGoaNBoK?ggd5:WMUn]Z0
+R2
+ITN0N;h_0g^SFPTGO8J13@0
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv
+FC:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv
+!i122 13
+L0 1 66
+R6
+r1
+!s85 0
+31
+Z29 !s108 1776706839.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/MazeRunner_tb.sv|
+!i113 1
+R7
+R8
+n@maze@runner_tb
+vMtrDrv
+R0
+R28
+!i10b 1
+!s100 KdWBeD6]];3;MhVlUY84N2
+R2
+I^74>7ghS21;e<?Zl?_X;50
+R3
+S1
+R4
+R10
+8C:/ECE 551/551_Project/ProjectDir/MtrDrv.sv
+FC:/ECE 551/551_Project/ProjectDir/MtrDrv.sv
+!i122 14
+L0 1 46
+R6
+r1
+!s85 0
+31
+R29
+!s107 C:/ECE 551/551_Project/ProjectDir/MtrDrv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/MtrDrv.sv|
+!i113 1
+R7
+R8
+n@mtr@drv
+vnavigate
+R0
+R28
+!i10b 1
+!s100 obTOaionGO6jWd65zKIWf1
+R2
+Ib4D928SMdX?c5eY<6JR=[0
+R3
+S1
+R4
+w1776705880
+8C:/ECE 551/551_Project/ProjectDir/navigate.sv
+FC:/ECE 551/551_Project/ProjectDir/navigate.sv
+!i122 15
+Z30 L0 1 140
+R6
+r1
+!s85 0
+31
+R29
+!s107 C:/ECE 551/551_Project/ProjectDir/navigate.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/navigate.sv|
+!i113 1
+R7
+R8
+vnavigate_tb
+R0
+Z31 !s110 1776706840
+!i10b 1
+!s100 [^W>ab>zk_olDRea]J7zN0
+R2
+IC@RhclOWb`d[cRloW8hMG3
+R3
+S1
+R4
+w1776705901
+8C:/ECE 551/551_Project/ProjectDir/navigate_tb_starter.sv
+FC:/ECE 551/551_Project/ProjectDir/navigate_tb_starter.sv
+!i122 16
+L0 1 126
+R6
+r1
+!s85 0
+31
+R29
+!s107 C:/ECE 551/551_Project/ProjectDir/navigate_tb_starter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/navigate_tb_starter.sv|
+!i113 1
+R7
+R8
+vPID
+R0
+R31
+!i10b 1
+!s100 1a:ImjdHTj6O7:11jaX[X3
+R2
+Ii[52abgOdX7GG<>0E13Z22
+R3
+S1
+R4
+R10
+8C:/ECE 551/551_Project/ProjectDir/PID.sv
+FC:/ECE 551/551_Project/ProjectDir/PID.sv
+!i122 17
+L0 1 68
+R6
+r1
+!s85 0
+31
+Z32 !s108 1776706840.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/PID.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/PID.sv|
+!i113 1
+R7
+R8
+n@p@i@d
+vpiezo_drv
+R0
+R31
+!i10b 1
+!s100 jFVIcibDTaChilVhHQBS`0
+R2
+IBc3GLZ9C0RAloInf?aCBV0
+R3
+S1
+R4
+Z33 w1776706695
+8C:/ECE 551/551_Project/ProjectDir/piezo_drv.sv
+FC:/ECE 551/551_Project/ProjectDir/piezo_drv.sv
+!i122 18
+L0 1 424
+R6
+r1
+!s85 0
+31
+R32
+!s107 C:/ECE 551/551_Project/ProjectDir/piezo_drv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/piezo_drv.sv|
+!i113 1
+R7
+R8
+vpiezo_drv_tb
+R0
+R31
+!i10b 1
+!s100 N[2aG`FYV0<d1L>`2PV2:2
+R2
+IaQdL?k:4G[0<?^MGBQdiZ1
+R3
+S1
+R4
+R33
+8C:/ECE 551/551_Project/ProjectDir/piezo_drv_tb.sv
+FC:/ECE 551/551_Project/ProjectDir/piezo_drv_tb.sv
+!i122 19
+L0 3 110
+R6
+r1
+!s85 0
+31
+R32
+!s107 C:/ECE 551/551_Project/ProjectDir/piezo_drv_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/piezo_drv_tb.sv|
+!i113 1
+R7
+R8
+vPWM12
+R0
+R14
+!i10b 1
+!s100 RjLJY5=fU5NjaJ;zKmgcZ3
+R2
+I:aQzd=FYIcFC[^DHn8PJF3
+R3
+S1
+R4
+R10
+8C:/ECE 551/551_Project/ProjectDir/PWM12.sv
+FC:/ECE 551/551_Project/ProjectDir/PWM12.sv
+!i122 21
+L0 1 52
+R6
+r1
+!s85 0
+31
+R32
+!s107 C:/ECE 551/551_Project/ProjectDir/PWM12.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/PWM12.sv|
+!i113 1
+R7
+R8
+n@p@w@m12
+vPWM8
+R0
+R31
+!i10b 1
+!s100 aNhj:TLFlYB[bX8InPzhO2
+R2
+I85P><E^JIWM7oSJ<THX<22
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/PWM8.sv
+FC:/ECE 551/551_Project/ProjectDir/PWM8.sv
+!i122 20
+L0 1 36
+R6
+r1
+!s85 0
+31
+R32
+!s107 C:/ECE 551/551_Project/ProjectDir/PWM8.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/PWM8.sv|
+!i113 1
+R7
+R8
+n@p@w@m8
+vRemoteComm
+R0
+R27
+!i10b 1
+!s100 ZWkhkf@FAT31?23Cif9713
+R2
+ITzl:ET9Oz@_8i3<O7=1gR3
+R3
+S1
+R4
+Z34 w1775664765
+8C:/ECE 551/551_Project/ProjectDir/RemoteComm.sv
+FC:/ECE 551/551_Project/ProjectDir/RemoteComm.sv
+!i122 34
+L0 1 91
+R6
+r1
+!s85 0
+31
+!s108 1776707432.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/RemoteComm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/RemoteComm.sv|
+!i113 1
+R7
+R8
+n@remote@comm
+vreset_synch
+R0
+R14
+!i10b 1
+!s100 aHmj6ToTo]KMgBOPoMbZP1
+R2
+IdS4Y6J3K6DL=_l9U1JG4X1
+R3
+S1
+R4
+R33
+8C:/ECE 551/551_Project/ProjectDir/reset_synch.sv
+FC:/ECE 551/551_Project/ProjectDir/reset_synch.sv
+!i122 22
+L0 1 21
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/ECE 551/551_Project/ProjectDir/reset_synch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/reset_synch.sv|
+!i113 1
+R7
+R8
+vRunnerPhysics
+R0
+R14
+!i10b 1
+!s100 ^ZcK3d5l`AIC^PiB09YaI2
+R2
+I0X[h^nn@C4=j<0J52`RAK2
+R3
+S1
+R4
+R5
+R15
+R16
+!i122 23
+L0 1 359
+R6
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R7
+R8
+n@runner@physics
+vsensor_intf
+R0
+R14
+!i10b 1
+!s100 @AE0fE]<T4CkQl<I;3JWX2
+R2
+Ih[?9ZB@l5]WTChgoeRnW20
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/sensor_intf.sv
+FC:/ECE 551/551_Project/ProjectDir/sensor_intf.sv
+!i122 24
+L0 1 370
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/ECE 551/551_Project/ProjectDir/sensor_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/sensor_intf.sv|
+!i113 1
+R7
+R8
+vSPI_ADC128S
+R0
+R14
+!i10b 1
+!s100 93oj0i;UV@::cHMPGHMJ>1
+R2
+I3=I>DjVTA]VRR5;:a_EhS1
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/SPI_ADC128S.sv
+FC:/ECE 551/551_Project/ProjectDir/SPI_ADC128S.sv
+!i122 25
+R30
+R6
+r1
+!s85 0
+31
+R17
+!s107 C:/ECE 551/551_Project/ProjectDir/SPI_ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/SPI_ADC128S.sv|
+!i113 1
+R7
+R8
+n@s@p@i_@a@d@c128@s
+vSPI_iNEMO4
+R0
+Z35 !s110 1776706842
+!i10b 1
+!s100 99RK0lJe7H=D_FonjE`d00
+R2
+Il7Y40QM6zm><hcN>6O4@E1
+R3
+S1
+R4
+R5
+8C:/ECE 551/551_Project/ProjectDir/SPI_iNEMO4.sv
+FC:/ECE 551/551_Project/ProjectDir/SPI_iNEMO4.sv
+!i122 26
+L0 1 196
+R6
+r1
+!s85 0
+31
+Z36 !s108 1776706842.000000
+!s107 C:/ECE 551/551_Project/ProjectDir/SPI_iNEMO4.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/SPI_iNEMO4.sv|
+!i113 1
+R7
+R8
+n@s@p@i_i@n@e@m@o4
+vSPI_main
+R0
+R35
+!i10b 1
+!s100 hz;JLTDd^f_jJVzMaY2C[0
+R2
+IAmiGnU^chZS^0AmF1c]_H3
+R3
+S1
+R4
+w1774457180
+8C:/ECE 551/551_Project/ProjectDir/SPI_main.sv
+FC:/ECE 551/551_Project/ProjectDir/SPI_main.sv
+!i122 27
+L0 1 125
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/ECE 551/551_Project/ProjectDir/SPI_main.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/SPI_main.sv|
+!i113 1
+R7
+R8
+n@s@p@i_main
+vUART_rx
+R0
+R35
+!i10b 1
+!s100 Ug=86@o8X?i[VCoJ^I@`L1
+R2
+IJDe3=ZK6lk]J9D@BIl7ZZ2
+R3
+S1
+R4
+w1772498061
+8C:/ECE 551/551_Project/ProjectDir/UART_rx.sv
+FC:/ECE 551/551_Project/ProjectDir/UART_rx.sv
+!i122 28
+L0 1 128
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/ECE 551/551_Project/ProjectDir/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/UART_rx.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_rx
+vUART_tx
+R0
+R35
+!i10b 1
+!s100 WVS:E5XWkWUaJ^T@nHVj21
+R2
+I7RVM2n8?1^E@J1mVfZ17C1
+R3
+S1
+R4
+w1772497507
+8C:/ECE 551/551_Project/ProjectDir/UART_tx.sv
+FC:/ECE 551/551_Project/ProjectDir/UART_tx.sv
+!i122 29
+L0 1 92
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/ECE 551/551_Project/ProjectDir/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/UART_tx.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_tx
+vUART_wrapper
+R0
+!s110 1776706843
+!i10b 1
+!s100 SeZC[_b>mhEKA:l01zYDQ1
+R2
+IC2FhMMW=YW^H41_cnTbE;3
+R3
+S1
+R4
+R34
+8C:/ECE 551/551_Project/ProjectDir/UART_wrapper.sv
+FC:/ECE 551/551_Project/ProjectDir/UART_wrapper.sv
+!i122 30
+L0 1 93
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/ECE 551/551_Project/ProjectDir/UART_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE 551/551_Project/ProjectDir/UART_wrapper.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_wrapper

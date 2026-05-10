@@ -1,0 +1,32 @@
+Warning: Design 'MazeRunner' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     X-2025.06
+Date:        Mon Apr 27 16:41:46 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Multiply driven inputs (LINT-6)                                 2
+    Constant outputs (LINT-52)                                      6
+
+Tristate                                                            5
+    A tristate bus has a non tri-state driver (LINT-34)             5
+--------------------------------------------------------------------------------
+
+Warning: In design 'MazeRunner', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'MazeRunner', input port 'A2D_MISO' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'MazeRunner', three-state bus 'iIR/strt_cnv' has non three-state driver 'iIR/U341/Y'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/chnnl[2]' has non three-state driver 'iIR/U6/Y'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/chnnl[1]' has non three-state driver 'iIR/U7/Y'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'iIR/chnnl[0]' has non three-state driver 'iIR/U8/Y'. (LINT-34)
+Warning: In design 'MazeRunner', three-state bus 'rst_n' has non three-state driver 'iRST/rst_ff2_reg/Q'. (LINT-34)
+Warning: In design 'MazeRunner', output port 'LED[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MazeRunner', output port 'LED[1]' is connected directly to 'logic 0'. (LINT-52)
+1

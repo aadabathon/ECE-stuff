@@ -1,0 +1,38 @@
+Information: Building the design 'A2D_intf'. (HDL-193)
+Warning: Cannot find the design 'A2D_intf' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'A2D_intf' in 'sensor_intf_1_900'. (LINK-5)
+Information: Search path: '. /cae/apps/data/saed32_edk-current/lib/stdcell_rvt/db_nldm /cae/apps/data/saed32_edk-current/lib/stdcell_lvt/db_nldm /cae/apps/data/saed32_edk-current/lib/stdcell_hvt/db_nldm /cae/apps/data/saed32_edk-current/lib/io_std/db_nldm'. (LINK-1801)
+Information: List of linked libraries: './saed32lvt_tt0p85v25c.db * standard.sldb /cae/apps/data/synopsys-2025/syn/X-2025.06/libraries/syn/gtech.db /cae/apps/data/synopsys-2025/syn/X-2025.06/libraries/syn/standard.sldb'. (LINK-1802)
+ 
+****************************************
+Report : area
+Design : MazeRunner
+Version: X-2025.06
+Date   : Mon Apr 27 16:41:10 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32lvt_tt0p85v25c (File: /filespace/j/jdryan7/ece551/REAL_FINAL/551_Project/project_synthesis/saed32lvt_tt0p85v25c.db)
+
+Number of ports:                         2171
+Number of nets:                          7238
+Number of cells:                         4678
+Number of combinational cells:           3860
+Number of sequential cells:               688
+Number of macros/black boxes:               0
+Number of buf/inv:                        712
+Number of references:                      20
+
+Combinational area:              10314.942510
+Buf/Inv area:                     1125.857924
+Noncombinational area:            4847.034461
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2973.473327
+
+Total cell area:                 15161.976971
+Total area:                      18135.450298
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
