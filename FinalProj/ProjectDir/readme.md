@@ -1,1 +1,2 @@
-Cool fun 551 project dir!
+Final Project for 551, a mazesolving robot!
+
